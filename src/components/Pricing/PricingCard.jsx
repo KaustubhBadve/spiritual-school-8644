@@ -1,3 +1,4 @@
+import { CheckIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -8,27 +9,24 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import styles from "./Pricing.module.css";
+import BtnComponent from "./BtnComponent";
 
 const PricingCard = ({
-  title = "Community",
-  description = "For casual video enthusiasts",
-  cost = "$0",
-  costDescription = "forever free",
-  btnLabel = "Get Started",
-  includeHeading = "What's included  ",
-  includeList = [
-    { title: "Unlimited videos" },
-    { title: "Unlimited videos" },
-    { title: "Unlimited videos" },
-    { title: "Unlimited videos" },
-  ],
+  title,
+  description,
+  cost,
+  costDescription,
+  btnLabel,
+  includeHeading,
+  billMonthly,
+  includeList,
 }) => {
   return (
     <Box>
       <Box
         textAlign={"left"}
         h={"350px"}
+        w={"250px"}
         border={"1px solid gray"}
         padding={"20px"}
         borderRadius={"10px"}
@@ -51,25 +49,17 @@ const PricingCard = ({
           <Text>{costDescription}</Text>
         </Box>
         <Box>
-          <Button
-            _hover={{backgroundColor:"#5846f6",color:"white"}}
-            w={"100%"}
-            h={"50px"}
-            fontWeight={"400"}
-            border={"1px solid blue"}
-            borderRadius={"30px"}
-            bgColor={"white"}
-          >
-            {btnLabel}
-          </Button>
+          <BtnComponent label={btnLabel}  />
         </Box>
       </Box>
-      <Box textAlign={"left"} padding={"10px"}>
-        <Heading as="h5" sixe="sm">{includeHeading}:</Heading>
-        <List padding={"10px"}>
-          {includeList.map((item) => (
+      <Box textAlign={"left"}>
+        <Heading m={"30px 10px 20px"} as="h6" size="xs">
+          {includeHeading}
+        </Heading>
+        <List padding={"10px"} spacing={2} m={"5px"}>
+          {includeList.map((item, index) => (
             <ListItem>
-              <ListIcon color="green.500" />
+              <ListIcon key={index} as={CheckIcon} color="green.500" />
               {item.title}
             </ListItem>
           ))}

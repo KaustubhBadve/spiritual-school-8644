@@ -1,0 +1,18 @@
+.btnGetStarted:hover {
+  background-color: #5846f6;
+  color: white;
+}
+
+Th {
+  text-align: center !important;
+}
+
+Td {
+  text-align: center !important;
+  font-size: 20px;
+}
+.stybillActive{
+  background-color: #48505e;
+  color: white;
+
+}

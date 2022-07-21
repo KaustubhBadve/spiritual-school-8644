@@ -35,6 +35,10 @@ const SieBar = () => {
             <Box><i className="fa-brands fa-square-font-awesome-stroke"></i></Box>
             <Text fontSize="15px">Format</Text>
            </stack>
+           <stack>
+            <Box><i class="fa-solid fa-photo-film"></i></Box>
+            <Text>Story</Text>
+           </stack>
    </Stack>
   )
 }

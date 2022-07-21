@@ -14,7 +14,7 @@ import PlanTable from "./PlanTable";
 import PricingCard from "./PricingCard";
 import styles from "./Pricing.module.css";
 import FrequentQues from "./FrequentQues";
-import pricingImg from "./Pricing.png";
+// import pricingImg from "./Pricing.png";
   
 
 const Pricing = () => {
@@ -35,7 +35,7 @@ const Pricing = () => {
     setBillYearly(true);
   };
   return (
-    <Box align="center" justify="center">
+    <Box align="center" justify="center" mt={"150px"} >
       
       <Container maxW={"50%"}>
         <Box justifyContent={"center"} alignItems={"center"} margin={"auto"}>
@@ -70,8 +70,8 @@ const Pricing = () => {
           borderRadius={"30px"}
           m={"50px 0px 90px"}
         >
-          <Flex align="center" justify="center">
-            <ButtonGroup variant="outline" spacing={"-0.1"} cursor={"pointer"}>
+          <Flex align="center" justify="center"  >
+            <ButtonGroup variant="outline" spacing={"-0.1"} cursor={"pointer"}  >
               <Button
                 borderRadius={"30px"}
                 border={"none"}
@@ -205,7 +205,7 @@ const Pricing = () => {
       {/* Choose plan table  */}
       <Box h={"auto"} w={"100%"}>
         <Container h={"auto"} maxW={"1260px"}>
-          <Text letterSpacing={"0.7px"} fontSize="30px" fontWeight={"450"} m={"40px 0px 40px"}>
+          <Text letterSpacing={"0.7px"} fontSize="30px" fontWeight={"440"} m={"40px 0px 40px"}>
             Choose the plan that's right for you
           </Text>
           <PlanTable />
@@ -219,7 +219,7 @@ const Pricing = () => {
         <FrequentQues />
       </Box>
       <Box mt={"120px"} mb={"80px"}>
-        <Image src={pricingImg} onClick={handleSignUp} />
+        {/* <Image src={pricingImg} onClick={handleSignUp} /> */}
       </Box>
     </Box>
   );

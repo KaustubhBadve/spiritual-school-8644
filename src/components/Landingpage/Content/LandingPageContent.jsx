@@ -51,7 +51,7 @@ const LandingPageContent = () => {
         <Company/>
       </div>
 
-      <Modal motionPreset='slideInBottom'size="2xl" blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
+      <Modal motionPreset='slideInBottom'size="4xl" blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
     <ModalOverlay  />
     <ModalContent >
       <ModalBody>

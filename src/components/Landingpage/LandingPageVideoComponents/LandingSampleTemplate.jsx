@@ -37,8 +37,8 @@ const LandingSampleTemplate = ({ imgp, video}) => {
       width="350px"
       height="200px"
       borderRadius="20px"
-      border="1px solid #dddde6"
-      className="video-sub"
+      // border="1px solid #dddde6"
+      // className="video-sub"
     >
       <HoverVideoPlayer
     
@@ -50,7 +50,7 @@ const LandingSampleTemplate = ({ imgp, video}) => {
 
       <Modal
         motionPreset="slideInBottom"
-        size="2xl"
+        size="4xl"
         blockScrollOnMount={false}
         isOpen={isOpen}
         onClose={onClose}

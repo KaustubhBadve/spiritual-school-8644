@@ -11,8 +11,6 @@ import LandingPage from './components/Landingpage/LandingPage';
 function App() {
   return (
     <div className="App">
-  <LandingPage/>
-     {/* <TempSelection/> */}
 
     </div>
   );

@@ -1,14 +1,15 @@
 
 import './App.css';
+import CompletePricing from './components/Pricing/CompletePricing';
+
+
 import TempSelection from './components/Template Selection/TempSelectionCombine';
-import MainRoutings from './components/MainRoutings';
-import NavbarLandingPage from './components/Landingpage/Navbar/NavbarLandingPage';
-import LandingPage from './components/Landingpage/LandingPage';
+
 function App() {
   return (
     <div className="App">
-    </div>
-  );
+ 
+     {/* <TempSelection/> */}
 }
 
 export default App;

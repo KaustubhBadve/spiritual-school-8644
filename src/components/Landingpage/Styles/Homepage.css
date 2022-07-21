@@ -194,25 +194,24 @@
     position: static;
     float: none;
   }
-  .dropdown-menu {
+  .dropdown-menu1 {
     position: relative;
     top: 100%;
     left: 0;
     z-index: 1000;
-    display: none;
+    /* display: none; */
     float: left;
     min-width: 10rem;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     margin: 0.125rem 0 0;
     font-size: 1rem;
     color: #24282f;
     text-align: left;
-    /* list-style: none; */
+    list-style: none;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
-    border: 1px solid red;
   }
   .nav-link:hover .dropdown-menu{
     display: block;

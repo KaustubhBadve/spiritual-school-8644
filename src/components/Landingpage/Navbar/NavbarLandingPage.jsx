@@ -7,9 +7,11 @@ const NavbarLandingPage = () => {
   const [learn, setLearn] = useState(false);
   const handleDropdown = () => {
     setCreate(!create);
+
   };
   const handleLearn = () => {
     setLearn(!learn);
+    setCreate(false)
   };
   return (
     <div>
@@ -60,9 +62,9 @@ const NavbarLandingPage = () => {
                         style={{ margin: "5px" }}
                       ></i>
                     </Link>
-                    {create && (
+
                       <div
-                        className="dropdown-menu"
+                        className="dropdown-menu1"
                         aria-labelledby="create-dropdown"
                         style={{ columnCount: 2 }}
                       >
@@ -163,8 +165,10 @@ const NavbarLandingPage = () => {
                           Voiceover
                         </Link>
                       </div>
+}    
                     )}
                   </li>
+                
 
                   <li className="nav-item mr-md-2">
                     <Link
@@ -209,7 +213,7 @@ const NavbarLandingPage = () => {
                     </Link>
                     {learn && (
                       <div
-                        className="dropdown-menu"
+                        className="dropdown-menu1"
                         aria-labelledby="learn-dropdown"
                       >
                         <Link className="dropdown-item" to="/learn/resources">

@@ -6,10 +6,7 @@ const VideoImage = () => {
     <div className="content_container" style={{ backgroundColor: "white" }}>
       <div>
         <div className="fontawesome" style={{ backgroundColor: "#02D3DA" }}>
-          <i
-            className="fas fa-file-search"
-            style={{ fontSize: "40px", color: "white" }}
-          ></i>
+        <i class="fa fa-book" aria-hidden="true" style={{fontSize:"40px",color:"white"}}></i>
         </div>
         <div className="content_span">
           <span>

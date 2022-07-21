@@ -7,9 +7,11 @@ const NavbarLandingPage = () => {
   const [learn, setLearn] = useState(false);
   const handleDropdown = () => {
     setCreate(!create);
+    setLearn(false)
   };
   const handleLearn = () => {
     setLearn(!learn);
+    setCreate(false)
   };
   return (
     <div>
@@ -62,102 +64,102 @@ const NavbarLandingPage = () => {
                     </Link>
                     {create && (
                       <div
-                        className="dropdown-menu"
+                        className="dropdown-menu1"
                         aria-labelledby="create-dropdown"
                         style={{ columnCount: 2 }}
                       >
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/photo-video-maker/"
                         >
                           Photo Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/facebook-video-maker/"
                         >
                           Facebook Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/youtube-intro-maker/"
                         >
                           YouTube Intro Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/instagram-video-maker/"
                         >
                           Instagram Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/instagram-story-maker/"
                         >
                           Instagram Story Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/promo-video-maker/"
                         >
                           Promo Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/video-ad-maker/"
                         >
                           Video Ad Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/marketing-video"
                         >
                           Marketing Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/linkedin-video/"
                         >
                           LinkedIn Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/business-video-maker/"
                         >
                           Business Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/ecommerce-video/"
                         >
                           Ecommerce Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/explainer-videos/"
                         >
                           Explainer Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/slideshow-maker/"
                         >
                           Slideshow Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/education-video/"
                         >
                           Education Video Maker
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/video-editor/"
                         >
                           Video Editor
                         </Link>
                         <Link
-                          className="dropdown-item font-l5"
+                          className="dropdown-item1 font-l5"
                           to="/voiceover/"
                         >
                           Voiceover
@@ -209,13 +211,13 @@ const NavbarLandingPage = () => {
                     </Link>
                     {learn && (
                       <div
-                        className="dropdown-menu"
+                        className="dropdown-menu1"
                         aria-labelledby="learn-dropdown"
                       >
-                        <Link className="dropdown-item" to="/learn/resources">
+                        <Link className="dropdown-item1" to="/learn/resources">
                           Resources
                         </Link>
-                        <Link className="dropdown-item" to="/learn/">
+                        <Link className="dropdown-item1" to="/learn/">
                           Blog
                         </Link>
                       </div>
@@ -225,7 +227,7 @@ const NavbarLandingPage = () => {
                     <Link
                       to="/auth/login/"
                       type="button"
-                      className="lumen5-button1 btn btn-rounded btn-primary btn-outline"
+                      className="lumen5-button2"
                     >
                       <span>Login</span>
                     </Link>
@@ -234,7 +236,7 @@ const NavbarLandingPage = () => {
                     <Link
                       to="/auth/signup/"
                       type="button"
-                      className="lumen5-button btn btn-rounded btn-primary"
+                      className="lumen5-button"
                     >
                       <span>Sign&nbsp;up</span>
                     </Link>

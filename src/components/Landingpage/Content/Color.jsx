@@ -22,6 +22,7 @@ const Color = () => {
             class="fa fa-file-text-o"
             style={{ fontSize: "40px", color: "white" }}
           ></i> */}
+          <i class="fa fa-paint-brush" aria-hidden="true" style={{fontSize:"40px",color:"white"}}></i>
         </div>
         <div className="content_span">
           <span>

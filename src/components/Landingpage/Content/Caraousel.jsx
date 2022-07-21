@@ -14,7 +14,9 @@ const Caraousel = () => {
         </p>
       </div>
       <div className="carousel-div">
-        <Carousel>
+        <Carousel
+          indicators={false}
+        >
           <Carousel.Item className="carousel-div">
             <img
               className="d-block w-100 h-100"
@@ -298,28 +300,48 @@ const Caraousel = () => {
         </Carousel>
       </div>
       <div className="carasouel-company">
-          <div>
-            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-siemens.png" alt="company-logo"/>
-          </div>
-          <div>
-            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-dnv.png" alt="company-logo"/>
-          </div>
-          <div>
-            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mitsubishi.png" alt="company-logo"/>
-          </div>
-          <div>
-            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-ncstate.png" alt="company-logo"/>
-          </div>
-          <div>
-            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-cms.png" alt="company-logo"/>
-          </div>
-          <div>
-            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-mondadori.png" alt="company-logo"/>
-          </div>
-          <div>
-            <img src="https://storage.googleapis.com/lumen5-site-images/carousel-berkshire.png" alt="company-logo"/>
-          </div>
-
+        <div>
+          <img
+            src="https://storage.googleapis.com/lumen5-site-images/carousel-siemens.png"
+            alt="company-logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://storage.googleapis.com/lumen5-site-images/carousel-dnv.png"
+            alt="company-logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://storage.googleapis.com/lumen5-site-images/carousel-mitsubishi.png"
+            alt="company-logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://storage.googleapis.com/lumen5-site-images/carousel-ncstate.png"
+            alt="company-logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://storage.googleapis.com/lumen5-site-images/carousel-cms.png"
+            alt="company-logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://storage.googleapis.com/lumen5-site-images/carousel-mondadori.png"
+            alt="company-logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://storage.googleapis.com/lumen5-site-images/carousel-berkshire.png"
+            alt="company-logo"
+          />
+        </div>
       </div>
     </div>
   );

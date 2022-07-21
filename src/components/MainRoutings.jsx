@@ -8,8 +8,8 @@ const MainRoutings = () => {
   return (
     <Routes>
     <Route path='/selectTemplate' element={<TempSelection/>}/>
-    {/* <Route path='/loading' element={<LoadingafterTemplate/>}/> */}
     <Route path='/blogtoVideoConversion' element={<VideoConversionCombine/>}/>
+ 
     </Routes>
   )
 }

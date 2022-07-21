@@ -106,7 +106,7 @@ navigate("/blogtoVideoConversion")
 
         </Stack>
 
-        <Button onClick={()=>navigate("/loading")} _hover={{color:"white", backgroundColor:"#5846f6"}}  color="white" borderRadius="30px" border="1px solid #5b4af6" colorScheme='blue' ml="60px" pr="8px" pl="8px" onClick={onClose}>
+        <Button _hover={{color:"white", backgroundColor:"#5846f6"}}  color="white" borderRadius="30px" border="1px solid #5b4af6" colorScheme='blue' ml="60px" pr="8px" pl="8px" onClick={()=>{ onClose(); navigate("/blogtoVideoConversion")}}>
           USE THIS TEMPLATE
         </Button>
        

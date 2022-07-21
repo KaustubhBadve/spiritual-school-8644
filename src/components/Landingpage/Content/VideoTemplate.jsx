@@ -13,8 +13,8 @@ const VideoTemplate = () => {
         <h5 className="video_drop">Drag and drop. No experience required.</h5>
       </div>
       <div className="video_converter">
-        <div>
-          <LandingSampleTemplate
+        <div className="video-sub">
+          <LandingSampleTemplate className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/tb_tracer.png"
             }
@@ -22,6 +22,13 @@ const VideoTemplate = () => {
               "https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4"
             }
           />
+           <div className="icon-circle-temp" onClick={onOpen}>
+            <i
+              className="fa fa-play"
+              aria-hidden="true"
+              style={{ color: "#5846f6", fontSize: "24px" }}
+            ></i>
+            </div>
         </div>
         <div>
           <LandingSampleTemplate

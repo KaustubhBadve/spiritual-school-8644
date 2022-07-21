@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Styles/Homepage.css"
+import "../Styles/Homepage.css";
 
 const NavbarLandingPage = () => {
-  const [create, setCreate] = useState(true);
+  const [create, setCreate] = useState(false);
   const [learn, setLearn] = useState(false);
   const handleDropdown = () => {
     setCreate(!create);
-    
   };
   const handleLearn = () => {
     setLearn(!learn);
@@ -61,7 +60,7 @@ const NavbarLandingPage = () => {
                         style={{ margin: "5px" }}
                       ></i>
                     </Link>
-                
+                    {create && (
                       <div
                         className="dropdown-menu"
                         aria-labelledby="create-dropdown"
@@ -164,7 +163,7 @@ const NavbarLandingPage = () => {
                           Voiceover
                         </Link>
                       </div>
-                    
+                    )}
                   </li>
 
                   <li className="nav-item mr-md-2">

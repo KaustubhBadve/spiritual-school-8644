@@ -1,13 +1,5 @@
 import { CheckIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Button,
-  Heading,
-  List,
-  ListIcon,
-  ListItem,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Heading, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
 import React from "react";
 import BtnComponent from "./BtnComponent";
 
@@ -18,38 +10,59 @@ const PricingCard = ({
   costDescription,
   btnLabel,
   includeHeading,
-  billMonthly,
+  sizeGiven,
+  status,
   includeList,
 }) => {
   return (
     <Box>
       <Box
         textAlign={"left"}
-        h={"350px"}
+        h={"410px"}
         w={"250px"}
-        border={"1px solid gray"}
-        padding={"20px"}
+        border={"2px solid #f1f2f5"}
         borderRadius={"10px"}
+        padding={"10px 20px 40px"}
+        marginBottom={"40px"}
       >
         <Box>
           <Text
-            mt={"30px"}
-            fontWeight={"600"}
-            fontSize={"20px"}
+            mt={"50px"}
+            fontWeight={"649"}
+            fontSize={"25px"}
             lineHeight={"22px"}
+            color={"black"}
           >
             {title}
           </Text>
-          <Text>{description}</Text>
+          <Text mt={"10px"}>{description}</Text>
         </Box>
-        <Box mt={"40px"} mb={"70px"}>
-          <Text fontWeight={"600"} fontSize={"20px"} lineHeight={"22px"}>
+        <Box mt={"50px"} mb={"80px"}>
+          <Text
+            fontWeight={"650"}
+            fontSize={"29px"}
+            color={"black"}
+            lineHeight={"22px"}
+          >
             {cost}
+            {title === "Community" || title === "Enterprise" ? (
+              ""
+            ) : (
+              <span
+                style={{
+                  fontWeight: "500",
+                  fontSize: "20px",
+                  marginLeft: "5px",
+                }}
+              >
+                USD
+              </span>
+            )}
           </Text>
-          <Text>{costDescription}</Text>
+          <Text mt={"10px"}>{costDescription}</Text>
         </Box>
-        <Box>
-          <BtnComponent label={btnLabel}  />
+        <Box mb={"40px"}>
+          <BtnComponent label={btnLabel} sizeGiven={sizeGiven}  status={status} />
         </Box>
       </Box>
       <Box textAlign={"left"}>

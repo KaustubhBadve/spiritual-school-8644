@@ -11,8 +11,18 @@ Td {
   text-align: center !important;
   font-size: 20px;
 }
-.stybillActive{
+.stybillActive {
   background-color: #48505e;
-  color: white;
-
+  color: white !important;
+}
+.stybillDeactive {
+  background-color: white;
+  color: #48505e;
+}
+.activeBtn {
+  background-color: #5846f6 !important;
+  color: white !important;
+}
+Tbody {
+  border-top: 2.5px solid #cccccc;
 }

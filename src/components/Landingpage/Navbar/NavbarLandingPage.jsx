@@ -8,6 +8,7 @@ const NavbarLandingPage = () => {
   const handleDropdown = () => {
     setCreate(!create);
     setLearn(false)
+
   };
   const handleLearn = () => {
     setLearn(!learn);
@@ -62,7 +63,7 @@ const NavbarLandingPage = () => {
                         style={{ margin: "5px" }}
                       ></i>
                     </Link>
-                    {create && (
+
                       <div
                         className="dropdown-menu1"
                         aria-labelledby="create-dropdown"
@@ -165,8 +166,10 @@ const NavbarLandingPage = () => {
                           Voiceover
                         </Link>
                       </div>
+}    
                     )}
                   </li>
+                
 
                   <li className="nav-item mr-md-2">
                     <Link

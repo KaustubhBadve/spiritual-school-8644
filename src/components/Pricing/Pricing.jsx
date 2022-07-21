@@ -4,8 +4,7 @@ import {
   ButtonGroup,
   Container,
   Flex,
-  Heading,
-  Spacer,
+  Image,
   Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
@@ -13,15 +12,31 @@ import BtnComponent from "./BtnComponent";
 import CustomerReview from "./CustomerReview";
 import PlanTable from "./PlanTable";
 import PricingCard from "./PricingCard";
-import styles from "./Pricing.module.css"
+import styles from "./Pricing.module.css";
+import FrequentQues from "./FrequentQues";
+// import pricingImg from "./Pricing.png";
+  
+
 const Pricing = () => {
   const [billMonthly, setBillMonthly] = useState(true);
   const [billYearly, setBillYearly] = useState(false);
   const isAuth = true;
 
-  const handleBillMonthly = () => {};
+  const handleSignUp = () => {
+    //if is auth true go to dashboard
+    // else go to signup
+  };
+  const handleBillMonthly = () => {
+    setBillMonthly(true);
+    setBillYearly(false);
+  };
+  const handleBillYearly = () => {
+    setBillMonthly(false);
+    setBillYearly(true);
+  };
   return (
-    <Box align="center" justify="center">
+    <Box align="center" justify="center" mt={"150px"} >
+      
       <Container maxW={"50%"}>
         <Box justifyContent={"center"} alignItems={"center"} margin={"auto"}>
           <Text
@@ -39,8 +54,8 @@ const Pricing = () => {
             textAlign={"center"}
             pt={"20px"}
             fontSize={"calc(1.35625rem + 1.275vw)"}
-            fontWeight="700"
-            lineHeight={"1.33"}
+            fontWeight="600"
+            lineHeight={"50px"}
             letterSpacing="normal"
           >
             Plans for your video content creation strategy
@@ -49,33 +64,41 @@ const Pricing = () => {
         <Box
           justifyContent={"center"}
           margin={"auto"}
-          h={"60px"}
+          h={"63px"}
           border={"1px solid #48505e"}
-          w={"256px"}
+          w={"253px"}
           borderRadius={"30px"}
-          m={"50px 50px"}
+          m={"50px 0px 90px"}
         >
-          <Flex align="center" justify="center">
-            <ButtonGroup variant="outline" spacing={"-0.1"} cursor={"pointer"}>
+          <Flex align="center" justify="center"  >
+            <ButtonGroup variant="outline" spacing={"-0.1"} cursor={"pointer"}  >
               <Button
                 borderRadius={"30px"}
                 border={"none"}
                 fontWeight={"400"}
-                h={"60px"}
+                h={"61px"}
                 fontSize={"20px"}
                 onClick={handleBillMonthly}
-                className = {billMonthly ? styles.stybillActive : ""}
+                className={
+                  billMonthly ? styles.stybillActive : styles.stybillDeactive
+                }
+                _hover={"backgroundColor:"}
+                transition={"all ease-in-out .01s"}
               >
                 Bill monthly
               </Button>
               <Button
                 borderRadius={"30px"}
-                h={"60px"}
-                fontWeight={"400"}
                 border={"none"}
+                fontWeight={"400"}
+                h={"61px"}
                 fontSize={"20px"}
-                className = {billMonthly ? styles.stybillActive : ""}
-              
+                onClick={handleBillYearly}
+                className={
+                  billYearly ? styles.stybillActive : styles.stybillDeactive
+                }
+                _hover={"backgroundColor:"}
+                transition={"all ease-in-out .01s"}
               >
                 Bill yearly
               </Button>
@@ -85,12 +108,12 @@ const Pricing = () => {
       </Container>
       <Flex justifyContent={"center"} mt="30px" gap={"20px"}>
         <PricingCard
+          sizeGiven={"100%"}
           title="Community"
-          description="For casual video enthusiasts"
+          description="For casual and video enthusiasts"
           cost="$0"
           costDescription="forever free"
-          // btnLabel={`isAuth ? "Current Plan":"Get Started"  `}
-          btnLabel={"Get Started"}
+          btnLabel={isAuth ? "Current Plan" : "Get Started"}
           includeHeading="What's included "
           billMonthly={billMonthly}
           includeList={[
@@ -101,11 +124,12 @@ const Pricing = () => {
         />
 
         <PricingCard
+          sizeGiven={"100%"}
           title="Starter"
           description="For the individual content creator"
-          cost="$59 USD"
+          cost={billMonthly ? "$79" : "$59"}
           costDescription="per month, billed yearly"
-          btnLabel="Get Started"
+          btnLabel={isAuth ? "Upgrade" : "Get Started"}
           includeHeading="Everything in Free, plus"
           includeList={[
             { title: "No Lumen5 branding" },
@@ -116,11 +140,13 @@ const Pricing = () => {
         />
 
         <PricingCard
+          sizeGiven={"100%"}
           title="Professional"
           description="For the professional video storyteller"
-          cost="$149 USD"
+          cost={billMonthly ? "$199" : "$149"}
           costDescription="per month, billed yearly"
-          btnLabel="Get Started"
+          btnLabel={isAuth ? "Upgrade" : "Get Started"}
+          status={"active"}
           includeHeading="Everything in Starter, plus"
           includeList={[
             { title: "50M stock photos & videos" },
@@ -132,6 +158,7 @@ const Pricing = () => {
         />
 
         <PricingCard
+          sizeGiven={"100"}
           title="Enterprise"
           description="For marketing & communication team"
           cost="Custom"
@@ -169,7 +196,7 @@ const Pricing = () => {
           </Box>
 
           <Box>
-            <BtnComponent label={"Get Started Today"} />
+            <BtnComponent status={"active"} label={"Get Started Today"} />
           </Box>
         </Flex>
       </Box>
@@ -178,11 +205,21 @@ const Pricing = () => {
       {/* Choose plan table  */}
       <Box h={"auto"} w={"100%"}>
         <Container h={"auto"} maxW={"1260px"}>
-          <Text fontSize="30px" fontWeight={"400"}  m={"40px 0px 40px"}>
+          <Text letterSpacing={"0.7px"} fontSize="30px" fontWeight={"440"} m={"40px 0px 40px"}>
             Choose the plan that's right for you
           </Text>
           <PlanTable />
         </Container>
+      </Box>
+      {/* frequent question */}
+      <Box>
+        <Text fontSize="25px" fontWeight={"400"} m={"100px 0px 40px"}>
+          A few frequently asked questions
+        </Text>
+        <FrequentQues />
+      </Box>
+      <Box mt={"120px"} mb={"80px"}>
+        {/* <Image src={pricingImg} onClick={handleSignUp} /> */}
       </Box>
     </Box>
   );

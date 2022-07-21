@@ -11,12 +11,19 @@ import HoverVideoPlayer from 'react-hover-video-player';
 import PausedOverlay from "./PausedOverlay";
 import LoadingOverlay from "./LoadingOverlay";
 import { InfoIcon } from '@chakra-ui/icons';
+import {useNavigate} from 'react-router-dom'
 
-// {videoLink,Label}
 
 const SampleTemplatesLayout = ({imgp,video,label}) => {
   const [isVisible, setIsVisible] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure()
+const navigate=useNavigate()
+
+const HandleLoading=()=>{
+navigate("/blogtoVideoConversion")
+}
+
+
 
   function over(e) {
     setIsVisible(true);
@@ -99,7 +106,7 @@ const SampleTemplatesLayout = ({imgp,video,label}) => {
 
         </Stack>
 
-        <Button _hover={{color:"white", backgroundColor:"#5846f6"}}  color="white" borderRadius="30px" border="1px solid #5b4af6" colorScheme='blue' ml="60px" pr="8px" pl="8px" onClick={onClose}>
+        <Button  _hover={{color:"white", backgroundColor:"#5846f6"}}  color="white" borderRadius="30px" border="1px solid #5b4af6" colorScheme='blue' ml="60px" pr="8px" pl="8px" onClick={onClose}>
           USE THIS TEMPLATE
         </Button>
        

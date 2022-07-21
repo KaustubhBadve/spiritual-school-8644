@@ -14,6 +14,7 @@ import BtnComponent from "./BtnComponent";
 import { CheckIcon } from "@chakra-ui/icons";
 import styles from "./Pricing.module.css";
 const PlanTable = () => {
+  const isAuth = true;
   return (
     <TableContainer>
       <Table justifyContent={"center"} margin={"auto"}>
@@ -23,85 +24,91 @@ const PlanTable = () => {
             <Th>
               <Box>
                 <Text
-                  fontSize="20px"
+                  fontSize="25px"
                   textTransform={"none"}
                   color={"black"}
-                  fontWeight={"400"}
+                  fontWeight={"470"}
                 >
                   Community
                 </Text>
                 <Text
                   fontSize="15px"
                   textTransform={"none"}
-                  color={"black"}
+                  color={"gray.500"}
                   fontWeight={"400"}
-                  m={"13px 0 13px"}
+                  m={"15px 0 25px"}
                 >
                   forever free
                 </Text>
-                <BtnComponent label={"Get Started"} btnsize={"50px"} />
+                <BtnComponent
+                  label={isAuth ? "Current Plan" : "Get Started"}
+                  btnsize={"50px"}
+                />
               </Box>
             </Th>
             <Th>
               <Box>
                 <Text
-                  fontSize="20px"
+                  fontSize="25px"
                   textTransform={"none"}
                   color={"black"}
-                  fontWeight={"400"}
+                  fontWeight={"470"}
                 >
                   Starter
                 </Text>
                 <Text
                   fontSize="15px"
                   textTransform={"none"}
-                  color={"black"}
+                  color={"gray.500"}
                   fontWeight={"400"}
-                  m={"13px 0 13px"}
+                  m={"15px 0 25px"}
                 >
                   $79USD/month
                 </Text>
-                <BtnComponent label={"Get Started"} />
+                <BtnComponent label={isAuth ? "Upgrade" : "Get Started"} />
               </Box>
             </Th>
             <Th>
               <Box>
                 <Text
-                  fontSize="20px"
+                  fontSize="25px"
                   textTransform={"none"}
                   color={"black"}
-                  fontWeight={"400"}
+                  fontWeight={"470"}
                 >
                   Professional
                 </Text>
                 <Text
                   fontSize="15px"
                   textTransform={"none"}
-                  color={"black"}
+                  color={"gray.500"}
                   fontWeight={"400"}
-                  m={"13px 0 13px"}
+                  m={"15px 0 25px"}
                 >
                   $199 USD/month
                 </Text>
-                <BtnComponent label={"Get Started"} />
+                <BtnComponent
+                  label={isAuth ? "Upgrade" : "Get Started"}
+                  status={"active"}
+                />
               </Box>
             </Th>
             <Th>
               <Box>
                 <Text
-                  fontSize="20px"
+                  fontSize="25px"
                   textTransform={"none"}
                   color={"black"}
-                  fontWeight={"400"}
+                  fontWeight={"470"}
                 >
                   Enterprise
                 </Text>
                 <Text
                   fontSize="15px"
                   textTransform={"none"}
-                  color={"black"}
+                  color={"gray.500"}
                   fontWeight={"400"}
-                  m={"13px 0 13px"}
+                  m={"15px 0 25px"}
                 >
                   Let's talk!
                 </Text>
@@ -110,11 +117,15 @@ const PlanTable = () => {
             </Th>
           </Tr>
         </Thead>
-        <hr style={{backgroundColor:"gray", width:"100%",}} />  
         <Tbody>
           <Tr>
             <Td>
-              <Text textAlign={"start"} fontWeight={"600"} fontSize={"20px"}>
+              <Text
+                label={"Usage"}
+                textAlign={"start"}
+                fontWeight={"600"}
+                fontSize={"20px"}
+              >
                 Usage
               </Text>
             </Td>
@@ -178,9 +189,9 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Translations</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>—</Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -330,8 +341,8 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Watermark upload</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
+            <Td>—</Td>
+            <Td>—</Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -343,8 +354,8 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Upload your own fonts</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
+            <Td>—</Td>
+            <Td>—</Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -356,9 +367,9 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Custom templates</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>—</Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -374,7 +385,7 @@ const PlanTable = () => {
           <Tr>
             <Td>
               <Text textAlign={"start"}>
-                Millions of free-to-use videos and images
+                Millions of free—to—use videos and images
               </Text>
             </Td>
             <Td>
@@ -428,7 +439,7 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Unlimited premium media</Text>
             </Td>
-            <Td>-</Td>
+            <Td>—</Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -443,8 +454,8 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Exclusive media marketplace</Text>
             </Td>
-            <Td>-</Td>
-            <Td>- </Td>
+            <Td>—</Td>
+            <Td>— </Td>
             <Td>25/month</Td>
             <Td>Custom </Td>
           </Tr>
@@ -470,7 +481,7 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Icons</Text>
             </Td>
-            <Td>-</Td>
+            <Td>—</Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -485,9 +496,9 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Upload your own custom icons</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>-</Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>—</Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -505,9 +516,9 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Brand management</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>- </Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>— </Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -516,9 +527,9 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Team permissions</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>- </Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>— </Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -527,31 +538,31 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Workspace management</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>- </Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>— </Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
           </Tr>
           <Tr>
             <Td>
-              <Text textAlign={"start"}>Two-factor authentication</Text>
+              <Text textAlign={"start"}>Two—factor authentication</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>- </Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>— </Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
           </Tr>
           <Tr>
             <Td>
-              <Text textAlign={"start"}>Single sign-on</Text>
+              <Text textAlign={"start"}>Single sign—on</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>- </Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>— </Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -585,7 +596,7 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Email support</Text>
             </Td>
-            <Td>-</Td>
+            <Td>—</Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -600,9 +611,9 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Customized support</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>- </Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>— </Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>
@@ -611,9 +622,9 @@ const PlanTable = () => {
             <Td>
               <Text textAlign={"start"}>Invoiced billing</Text>
             </Td>
-            <Td>-</Td>
-            <Td>-</Td>
-            <Td>- </Td>
+            <Td>—</Td>
+            <Td>—</Td>
+            <Td>— </Td>
             <Td>
               <Box as={CheckIcon} color="green.500"></Box>
             </Td>

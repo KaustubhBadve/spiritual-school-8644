@@ -15,6 +15,10 @@ const SieBar = () => {
             <Box><i class="fa-solid fa-photo-film"></i></Box>
             <Text>Story</Text>
            </stack>
+           <stack>
+            <Box><i class="fa-solid fa-photo-film"></i></Box>
+            <Text>Story</Text>
+           </stack>
    </Stack>
   )
 }

@@ -18,11 +18,12 @@ export  function AllvideosCard() {
         // maxW={"550px"}
         // w={"full"}
         bg={useColorModeValue("white", "gray.800")}
-        border={"1px solid grey"}
+        border={"1px solid #dddee6"}
         rounded={"md"}
         overflow={"hidden"}
-        width={"350px"}
-        height={"350px"}
+        width={"400px"}
+        height={"400px"}
+        fontSize="30px"
       >
         <Stack
           textAlign={"center"}
@@ -42,11 +43,7 @@ export  function AllvideosCard() {
             Hobby
           </Text>
           <Stack direction={"row"} align={"center"} justify={"center"}>
-            <Text fontSize={"3xl"}>$</Text>
-            <Text fontSize={"6xl"} fontWeight={800}>
-              79
-            </Text>
-            <Text color={"gray.500"}>/month</Text>
+            <img src="https://storage.googleapis.com/lumen5-site-images/Prev_Origin_v1b.png" alt="" />
           </Stack>
         </Stack>
 
@@ -54,11 +51,11 @@ export  function AllvideosCard() {
           <List spacing={3}>
             <ListItem>
               <ListIcon as={CheckIcon} color="green.400" />
-              5.000 page views
+              Untitled Videos
             </ListItem>
             <ListItem>
               <ListIcon as={CheckIcon} color="green.400" />
-              50 automation executions
+              Create Good Videos
             </ListItem>
             <ListItem>
               <ListIcon as={CheckIcon} color="green.400" />

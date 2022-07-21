@@ -8,7 +8,7 @@ const NavbarTempSelc = () => {
       display="flex"
       justifyContent="space-between"
       borderBottom="1px solid #dddee6"
-      p="13px"
+      p="22px"
     >
       <Stack
         direction="row"
@@ -17,7 +17,7 @@ const NavbarTempSelc = () => {
         // border="1px solid red"
       >
         <Image
-          width="110px"
+          width="150px"
           src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-color-default.svg"
         />
       </Stack>
@@ -37,13 +37,13 @@ const NavbarTempSelc = () => {
           />
         </Box>
         <Button
-          width="70px"
-          height="30px"
+          width="80px"
+          height="40px"
           fontSize="12px"
           _hover={{ color: "white", bg: "#5b4af6" }}
           border="1px solid #5b4af6"
           color="#5b4af6"
-          marginTop="5px"
+          // marginTop="5px"
           borderRadius="20px"
         >
           UPGRADE

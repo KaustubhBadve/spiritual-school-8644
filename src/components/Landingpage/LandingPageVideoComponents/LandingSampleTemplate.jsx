@@ -16,6 +16,7 @@ import HoverVideoPlayer from "react-hover-video-player";
 // import { InfoIcon } from "@chakra-ui/icons";
 import LandingLoadingOverlay from "./LandingLoadingOverlay";
 import LandingPausedOverlay from "./LandingPausedOverlay";
+import "../Styles/Homepage.css"
 
 // {videoLink,Label}
 
@@ -37,6 +38,7 @@ const LandingSampleTemplate = ({ imgp, video}) => {
       height="200px"
       borderRadius="20px"
       border="1px solid #dddde6"
+      className="video-sub"
     >
       <HoverVideoPlayer
     

@@ -10,9 +10,6 @@ function App() {
     <div className="App">
  
      {/* <TempSelection/> */}
-     <CompletePricing/>
-    </div>
-  );
 }
 
 export default App;

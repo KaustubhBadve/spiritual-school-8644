@@ -334,7 +334,7 @@
 .footer_container{
     margin-top: 15rem;
     background-color: #24282f;
-    height: 29.3rem;
+    height: 27rem;
     display: flex;
     padding: 3rem;
     justify-content: space-between;
@@ -388,11 +388,12 @@
     font-size: 0.875rem;
 }
 .carasouel-d{
-    border: 1px solid red;
     width:420px;
-    height:325px;
+    height:auto;
     background-color: #fff;
     margin-left: 50%;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 *{
     font-family: "Poppins",sans-serif;
@@ -534,8 +535,8 @@
 .video_container{
     height:879px;
     width:100%;
-    border: 1px solid red;
     padding: 4rem 2rem;
+    
 }
 .video_template{
     color: #24282F;
@@ -548,7 +549,6 @@
     flex-wrap: wrap;
     width:35%;
     margin: auto;
-    border: 1px solid green;
     text-align: center;
 
 }
@@ -565,13 +565,209 @@
     grid-template-columns: repeat(3,1fr);
     width:75%;
     gap: 1rem;
-    border: 1px solid pink;
     margin: auto;
+    margin-top: 2rem;
 }
 .video_converter>div{
     height:200px;
     width:350px;
-    border: 1px solid red;
+}
+.video-sub{
+  height:200px;
+  width:350px !important;
+  position: relative;
+}
+.carousel-div{
+  width:895px;
+  height: 385px;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+.carasouel-img{
+  height:96px;
+  width:388px;
+  margin: 0.5rem 0rem;
+  padding: 1rem;
+}
+.carasouel-img img{
+  vertical-align: middle;
+    border-style: none;
+    width:120px;
+    height:64px
+}
+.carasouel-para{
+  width:388px;
+  height:auto;
+  margin:0.25rem 0rem;
+  padding: 0rem 1rem;
+}
+.carasouel-para>p{
+  color: #24282F;
+  font-family: "Poppins",sans-serif;
+  font-size: 18px;
+}
+.carasouel-author{
+  width:388px;
+  height: 48px;
+  margin:0.25rem 0rem;
+  padding: 0rem 1rem;
+  color: #24282F;
+}
+.carasouel-hr{
+  display: flex;
+  flex-wrap: wrap;
+   margin-left: 0.25rem;
+   padding: 0rem 1rem;
+    gap:10%
+}
+.carasouel-hr>div:first-child{
+  margin-top: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+   
+    width:50%
+}
+.carasouel-link{
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+  color: #24282F;
+  text-decoration: none;
+  
+}
+
+.carasouel-container{
+  background-color: #FAFAFB;
+  margin: 0rem 0rem 2rem;
+  padding: 5rem 2rem 4rem;
+  width: 100%;
+}
+.carasouel-head{
+  width:760px;
+  height:125px;
+  margin: auto;
+  padding: 0px 15px;
+  text-align: center !important;
+  display: block;
+}
+.carasouel-head>span{
+  font-size: 2.3125rem;
+  font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: normal;
+}
+.carasouel-head>p{
+  font-size: 1.3125rem;
+  font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    margin-top: 1rem;
+}
+.carasouel-company{
+  width:984px;
+  height: 55px;
+  padding: 0px 48px;
+  display: flex;
+  gap:2rem;
+  margin: auto;
+  margin-top: 40px;
+}
+.carasouel-company img{
+  width:102px;
+  height: 55px;
+}
+.tips-container{
+  height:686px;
+  width:100%;
+  margin: 0px 0px 32px;
+  padding: 64px 32px;
+}
+.tips-container>div:first-child{
+  width:546px;
+  height:100px;
+  margin: auto;
+  text-align: center;
+}
+.tips-container span{
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+  font-size: 2.3125rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: normal;
+  font-family: "Poppins",sans-serif;
+}
+.tips-box{
+  width:950px;
+  height: 395px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.tips-box>div{
+  width:250px;
+  height:100%;
+  /* border: 1px solid green; */
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+.tips-box img{
+  height:40%;
+  width:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tips-blog{
+  padding: 1.25rem;
+  flex: 1 1 auto;
+    min-height: 1px;
+    height: 180px;
+}
+.tips-blog>p{
+ color: #24282F;
+ font-size: 16px;
+}
+.tips-blog>h5{
+  font-size: 1.3125rem;
+  font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: normal;
+    margin-top: 0.5rem;
+    font-family: "Poppins",sans-serif;
+    font-style: normal;
+
+}
+.tips-footer{
+  border-radius: 0 0 .25rem .25rem;
+  text-align: right !important;
+  padding: .75rem 1.25rem;
+  font-family: "Poppins",sans-serif;
+  color: #5846f6;
+}
+.tips-footer:hover{
+  text-decoration: underline;
+}
+.icon-circle-temp{
+  position:absolute;
+  top: 15%;
+  left: 38%;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%);
+  transition: all .3s ease-in;
+  cursor: pointer;
+  width: 72px;
+  height: 72px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
 

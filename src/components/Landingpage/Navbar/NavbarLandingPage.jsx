@@ -165,8 +165,7 @@ const NavbarLandingPage = () => {
                           Voiceover
                         </Link>
                       </div>
-}    
-                    )}
+                    
                   </li>
                 
 

@@ -50,7 +50,7 @@ const UserDashSidebar = () => {
    };
   return (
     <Stack direction="row">
-      <Box width="230px" height="100vh" pt="50px" border="1px solid #dddee6">
+      <Box width="300px" height="100vh" pt="50px" border="1px solid #dddee6" lineHeight="55px">
         <Stack pl="30px" direction="column" textAlign="left">
           <Link spy={true} activeClass="activeClass" to="Intro" smooth={true}>
             <Text

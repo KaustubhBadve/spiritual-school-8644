@@ -4,9 +4,9 @@
     padding-left: 3rem !important;
   }
 }
-/* * {
+* {
   font-family: "Poppins", sans-serif;
-} */
+}
 .fixed-top {
   /* position: fixed; */
   top: 0;
@@ -194,8 +194,19 @@ a.label {
   position: static;
   float: none;
 }
+/* .dropdown-menu1{
 
+  .dropdown-menu1 {
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
 
+    /* display: none; */
+    .p-flex li{
+      color: white;
+    
+    }
 .dropdown-menu1 {
   position: relative;
   top: 100%;
@@ -263,9 +274,6 @@ a.label {
   }
   .btn.lumen5-button.btn-primary.btn-outline {
     color: #5846f6;
-  }
-  #AA:hover{
-    background-color: #2310cf;
   }
   .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
@@ -1030,10 +1038,96 @@ a.label {
   border: 1px solid red;
   border-radius: 10px;
 }
-.pricing{
-  width:80%;
-  margin: auto;
-  margin-top: 2rem;
-  padding: 2rem ;
+.content-container{
+  height:780px;
+  width:100%;
+  margin: 8px 0px;
+  padding: 64px 32px;
+  background-color: #24282f;
 }
+.content-container>div{
+  width:75%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  gap:6%;
+ 
+}
+.content-container>div div{
+  width:460px;
+  padding: 0px 48px 0px 0px;
+}
+.content-scale{
+  height:284px;
+  width:475px;
+  margin: 0px 0px 48px;
+  padding: 0px 15px;
+}
+.content-scale>h4{
+  color: white;
+  font-size: 1.3125rem;
+  line-height: 1.33;
+  letter-spacing: normal;
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  font-weight: 700 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.content-scale>span{
+  font-size: 1rem;
+    font-family: "Poppins",sans-serif;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: .01em;
+    color: white;
+}
+.explore-para{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: .01em;
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+  width:450px
+}
+.enterprise-review{
+  height:456px;
+  width:100%;
+  background-color: #24282f;
+  margin: 0px 0px 32px;
+  padding: 64px 32px;
+}
+.enterprise-subreview{
+  width:75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap:5%
+}
+
+.review-report{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: .01em;
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  color: white;
+}
+.enterprise-customer{
+  display: flex;
+  gap:10%;
+  color: white;
+}
+.enterprise-customer img{
+  width:52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
 

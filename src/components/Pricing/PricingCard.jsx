@@ -15,13 +15,12 @@ const PricingCard = ({
   includeList,
 }) => {
   return (
-    <Box    h={"65%"}     
-    >
+    <Box h={"65%"}>
       <Box
         textAlign={"left"}
         h={"100%"}
         w={"100%"}
-        border={"2px solid gray"}
+        border={"1px solid #dddee6"}
         borderRadius={"10px"}
         padding={"10px 20px 40px"}
         marginBottom={"40px"}
@@ -32,7 +31,7 @@ const PricingCard = ({
           <Text
             mt={"50px"}
             fontWeight={"600"}
-            fontSize={"21px"}
+            fontSize={"22px"}
             lineHeight={"22px"}
             color={"black"}
           >
@@ -80,10 +79,10 @@ const PricingCard = ({
         <Heading m={"35px 10px 10px 10px"} as="h6" size="xs">
           {includeHeading}:
         </Heading>
-        <List  spacing={2} ml={"20px"}>
+        <List spacing={2} ml={"20px"}>
           {includeList.map((item, index) => (
             <ListItem>
-              <Box mb={"-8px"} >
+              <Box mb={"-8px"}>
                 <ListIcon key={index} as={CheckIcon} color="green.500" />
                 <span style={{ fontSize: "13px" }}> {item.title}</span>
               </Box>

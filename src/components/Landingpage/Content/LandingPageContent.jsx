@@ -27,8 +27,9 @@ const LandingPageContent = () => {
               to="/auth/signup/"
               type="button"
               className="lumen5-button btn btn-rounded btn-primary btn-lg"
+              id='AA'
             >
-              <span>Sign up free</span>
+              <span >Sign up free</span>
             </Link>
           </div>
         </div>

@@ -16,7 +16,7 @@ import React from "react";
 
 const Payment = () => {
   return (
-    <Container  maxW={"60%"} h={"auto"}>
+    <Container maxW={"60%"} h={"auto"}>
       <HStack
         h={"100%"}
         align={"center"}
@@ -135,13 +135,7 @@ const Payment = () => {
           }}
         ></div>
         {/* box 2 */}
-        <Box
-          paddingLeft={"70px"}
-          
-          w={"50%"}
-          paddingRight={"50px"}
-          h={"700px"}
-        >
+        <Box paddingLeft={"70px"} w={"50%"} paddingRight={"50px"} h={"700px"}>
           <Box mt={"40px"}>
             <Text
               fontSize={"20px"}
@@ -211,19 +205,26 @@ const Payment = () => {
             </Text>
             <Input />
           </Box>
-          <Box mt={"15px"} borderRadius={"10px"} border={" 1px solid #dedede"}>
+          <Box
+            mt={"15px"}
+            borderRadius={"10px"}
+            border={" 1px solid #dedede"}
+            padding={"5px"}
+          >
             <Checkbox>
-              <Text  >Save my info for 1-click checkout</Text>
-              <Text fontSize={"13px"}>
+              <Text marginLeft={"2px"} fontSize={"15px"}>
+                Save my info for 1-click checkout
+              </Text>
+              <Text marginLeft={"2px"} fontSize={"12px"}>
                 Pay faster on Lumen5 Technologies and thousands of sites.
               </Text>
             </Checkbox>
           </Box>
-          <Box mt={"10px"} mb={"10px"}  >
-            <Button>Subscribe</Button>
+          <Box mt={"10px"} mb={"10px"}>
+            <Button w={"100%"}>Subscribe</Button>
           </Box>
           <Box>
-            <Text fontSize={"13px"}  textAlign={"center"}>
+            <Text fontSize={"13px"} textAlign={"center"}>
               By confirming your subscription, you allow Lumen5 Technologies Ltd
               to charge your card for this payment and future payments in
               accordance with their terms. You can always cancel your

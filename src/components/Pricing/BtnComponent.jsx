@@ -1,7 +1,22 @@
-import { Button, StylesProvider } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import React from "react";
-import styles from "./Pricing.module.css"
+import { Navigate, useNavigate } from "react-router-dom";
+import styles from "./Pricing.module.css";
 const BtnComponent = ({ label, sizeGiven, status }) => {
+  const navigate = useNavigate();
+  const isAuth = true;
+  
+  const handleBtnClick = () => {
+    if (label === "Get Started Today" && isAuth) {
+      return navigate("/dashboard");
+    } else if (label === "Learn More") {
+      return navigate("/enterprise");
+    } else if (isAuth) {
+      return navigate("/payment");
+    } else if (!isAuth) {
+      navigate("/auth/signup");
+    }
+  };
   return (
     <Button
       _hover={{ backgroundColor: "#5846f6", color: "white" }}
@@ -14,6 +29,7 @@ const BtnComponent = ({ label, sizeGiven, status }) => {
       size={sizeGiven === 100 ? "100%" : "lg"}
       disabled={label === "Current Plan"}
       className={status === "active" ? styles.activeBtn : ""}
+      onClick={handleBtnClick}
     >
       {label}
     </Button>

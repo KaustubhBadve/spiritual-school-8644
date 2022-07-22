@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Styles/Homepage.css";
+// import "./Homepage.css";
 
-const NavbarLandingPage = () => {
+const EnterpriseNavbar = () => {
   const [create, setCreate] = useState(false);
   const [learn, setLearn] = useState(false);
-
   const handleDropdown = () => {
     setCreate(!create);
     setLearn(false);
@@ -15,13 +14,16 @@ const NavbarLandingPage = () => {
     setCreate(false);
   };
   return (
-    <div style={{transition:"0.4s"}}>
-      <nav className="navbar navbar-expand-lg fixed-top navbar-light px-md-5" style={{transition:"0.4s"}}>
-        <div className="d-flex pl-md-4 ml-md-5" style={{transition:"0.4s"}}>
+    <div>
+      <nav
+        className="navbar navbar-expand-lg fixed-top navbar-light header-container px-md-5"
+        style={{ backgroundColor: "#24282f" }}
+      >
+        <div className="d-flex pl-md-4 ml-md-5">
           <Link to="/" className="navbar-brand d-flex align-items-center">
             <img
               className="rounded float-left nav-bar__logo"
-              src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png"
+              src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png"
               alt="Lumen5 Logo"
             />
           </Link>
@@ -40,11 +42,11 @@ const NavbarLandingPage = () => {
         </button>
         <div
           className="collapse navbar-collapse mr-lg-5 justify-content-end"
-          id="collapsedBarId"
+          id="collapsedBarId" style={{marginLeft:"38%"}}
         >
           <div className="d-flex">
             <div className="q-flex">
-              <div className="">
+              <div className="p-flex">
                 <ul className="navbar-nav">
                   <li className="nav-item dropdown mr-md-2">
                     <Link
@@ -56,14 +58,14 @@ const NavbarLandingPage = () => {
                       aria-expanded="false"
                       onClick={handleDropdown}
                     >
-                      Create
+                      <span style={{ color: "white",fontFamily:"Poppins, sans-serif",letterSpacing:"0.01rem" }}>Create</span>
+
                       <i
                         className="fa fa-angle-down"
                         aria-hidden="true"
-                        style={{ margin: "5px" }}
+                        style={{ margin: "5px", color: "white" }}
                       ></i>
                     </Link>
-
                     {create && (
                       <div
                         className="dropdown-menu1"
@@ -168,114 +170,14 @@ const NavbarLandingPage = () => {
                         </Link>
                       </div>
                     )}
-
-                    {/* <div
-                      className="dropdown-menu1"
-                      aria-labelledby="create-dropdown"
-                      style={{ columnCount: 2 }}
-                    >
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/photo-video-maker/"
-                      >
-                        Photo Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/facebook-video-maker/"
-                      >
-                        Facebook Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/youtube-intro-maker/"
-                      >
-                        YouTube Intro Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/instagram-video-maker/"
-                      >
-                        Instagram Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/instagram-story-maker/"
-                      >
-                        Instagram Story Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/promo-video-maker/"
-                      >
-                        Promo Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/video-ad-maker/"
-                      >
-                        Video Ad Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/marketing-video"
-                      >
-                        Marketing Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/linkedin-video/"
-                      >
-                        LinkedIn Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/business-video-maker/"
-                      >
-                        Business Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/ecommerce-video/"
-                      >
-                        Ecommerce Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/explainer-videos/"
-                      >
-                        Explainer Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/slideshow-maker/"
-                      >
-                        Slideshow Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/education-video/"
-                      >
-                        Education Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/video-editor/"
-                      >
-                        Video Editor
-                      </Link>
-                      <Link className="dropdown-item1 font-l5" to="/voiceover/">
-                        Voiceover
-                      </Link>
-                    </div> */}
                   </li>
 
-                  <li className="nav-item mr-md-2">
+                  <li className="nav-item mr-md-2" style={{ color: "white" }}>
                     <Link
                       className="nav-link text-decoration-none text-dark font-l5 font-l5--regular"
                       to="/pricing/"
                     >
-                      Pricing
+                      <span style={{ color: "white" }}>Pricing</span>
                     </Link>
                   </li>
                   <li className="nav-item mr-md-2">
@@ -283,7 +185,7 @@ const NavbarLandingPage = () => {
                       className="nav-link text-decoration-none text-dark font-l5 font-l5--regular"
                       to="/enterprise/"
                     >
-                      Enterprise
+                      <span style={{ color: "white" }}>Enterprise</span>
                     </Link>
                   </li>
                   <li className="nav-item mr-md-2">
@@ -291,7 +193,7 @@ const NavbarLandingPage = () => {
                       className="nav-link text-decoration-none text-dark font-l5 font-l5--regular"
                       to="/case-studies/"
                     >
-                      Case studies
+                      <span style={{ color: "white" }}>Case studies</span>
                     </Link>
                   </li>
                   <li className="nav-item mr-md-2 dropdown">
@@ -304,11 +206,12 @@ const NavbarLandingPage = () => {
                       aria-expanded="false"
                       onClick={handleLearn}
                     >
-                      Learn
+                      <span style={{ color: "white" }}>Learn</span>
+
                       <i
                         className="fa fa-angle-down"
                         aria-hidden="true"
-                        style={{ margin: "5px" }}
+                        style={{ margin: "5px", color: "white" }}
                       ></i>
                     </Link>
                     {learn && (
@@ -330,6 +233,11 @@ const NavbarLandingPage = () => {
                       to="/auth/login/"
                       type="button"
                       className="lumen5-button2"
+                      style={{
+                        backgroundColor: "#24282f",
+                        color: "white",
+                        border: "1px solid white",
+                      }}
                     >
                       <span>Login</span>
                     </Link>
@@ -353,4 +261,4 @@ const NavbarLandingPage = () => {
   );
 };
 
-export default NavbarLandingPage;
+export default EnterpriseNavbar;

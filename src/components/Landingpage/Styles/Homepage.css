@@ -194,28 +194,6 @@ a.label {
   position: static;
   float: none;
 }
-/* .dropdown-menu1{
-
-  .dropdown-menu1 {
-    position: relative;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-
-    /* display: none; */
-
-    float: left;
-    min-width: 10rem;
-    padding: 1rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    color: #24282f;
-    text-align: left;
-    border: 1px solid red;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-  } */
 .dropdown-menu1 {
   position: relative;
   top: 100%;

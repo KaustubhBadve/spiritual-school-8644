@@ -194,19 +194,8 @@ a.label {
   position: static;
   float: none;
 }
-/* .dropdown-menu1{
 
-  .dropdown-menu1 {
-    position: relative;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
 
-    /* display: none; */
-    .p-flex li{
-      color: white;
-    
-    }
 .dropdown-menu1 {
   position: relative;
   top: 100%;

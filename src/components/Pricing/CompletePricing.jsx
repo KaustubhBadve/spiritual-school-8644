@@ -6,7 +6,9 @@ import FooterLandingPage from "../Landingpage/FooterLandingPage/FooterLandingPag
 const CompletePricing = () => {
   return (
     <div>
+      <NavbarLandingPage/>
       <Pricing />
+      <FooterLandingPage/>
     </div>
   );
 };

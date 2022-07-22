@@ -1,79 +1,41 @@
-
-  import { useState } from 'react';
-  import styles from "../Styles/signup.module.css";
+import { useState } from 'react';
+  import styles from "../Login&Signup/SignUp.module.css";
+ import LoginSignup from "./LoginSignup.png"
+//  import { Stack,Box,Button} from '@chakra-ui/react';
   
-  export default function Signup() {
+  export default function SignUp() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [toggleType, setToggleType] = useState(false);
     
     const handleSignUp = () => {
-      const payload = {
-        name,
-        email,
-        password,
-      };
-      fetch("https://stormy-journey-32606.herokuapp.com/user", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          document.title =
-            "Lumen5 - Video Maker | Create Videos Online in Minutes";
-          // navigate("/signIn");
-        });
+      
+
     };
     
-  
         return (
           <>
-            <div className={styles.sidenav}>
+          <div style={{display:"flex"}}>
+             <div className='first_image'>
+                <div className={styles.sidenav}>
               <div style={{ height: "125px" }}>
-                <img
-                  width="140px"
-                  src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png"
-                  alt=""
-                />
+                 <img src={LoginSignup} alt="" />
               </div>
-      
-              <div className={styles.sidenavHeading}>
-                Supercharge your content strategy
-              </div>
-      
-              <div className={styles.sidenavPara}>Join 800,000+ brands creating</div>
-              <div className={styles.sidenavPara}>videos with Lumen5</div>
-      
               <div className={styles.sidenavGrid}>
-                {/* {companysLogo.map((el, idx) => {
-                  return (
-                    <div key={idx}>
-                      <img width="85px" src={el} alt="" />
-                    </div>
-                  );
-                })} */}
               </div>
             </div>
-      
-            <div className={styles.afterSidenav}>
+             </div>
+      <div className='second_image' style={{width:"700px",padding:"50px",margin:"0px 100px 100px 160px",lineHeight:"38px",textAlign:"left"}}>
+         <div className={styles.afterSidenav}>
               <div className={styles.heading}>Get started with a free account</div>
       
               <div className={styles.formData}>
                 <div className={styles.name}>FULL NAME</div>
                 <input
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  type="text"
                 />
                 <div className={styles.name}>WORK EMAIL</div>
                 <input
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  type="text"
                 />
                 <div className={styles.passwordDivision}>
                   <div>PASSWORD</div>
@@ -86,9 +48,6 @@
                   </div>
                 </div>
                 <input
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  type={toggleType ? "text" : "password"}
                 />
               </div>
       
@@ -112,7 +71,7 @@
               </div>
       
               <div>
-                <button className={styles.handleSignUp} onClick={handleSignUp}>
+                <button className={styles.handleSignUp}>
                 Create an account
                 </button>
       
@@ -121,9 +80,12 @@
                   <div>OR</div>
                   <hr></hr>
                 </div>
-      
-                <button className={styles.button2}>Sign up with Facebook</button>
-              </div>
+                 <div style={{display:"flex"}}>
+                  <button className={styles.button2}>
+                  {/* <div><img style={{marginLeft:"200px"}}src="https://www.svgrepo.com/show/158427/facebook.svg" alt="facebook" /></div> */}
+                 <div><p>Sign up with Facebook</p></div></button>
+                </div>
+              </div> 
       
               <div className={styles.bottomLines}>
                 Already have a Lumen5 account? <a href="/login">Log in</a>
@@ -142,6 +104,12 @@
                 .
               </div>
             </div>
+
+        
+      </div>
+           
+          </div>
+           
           </>
         
         

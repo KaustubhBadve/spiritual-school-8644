@@ -6,7 +6,7 @@ const EnterpriseMaintain = () => {
       <div style={{ width: "540px", padding: "0px 0px 0px 48px" }}>
         <div className="fontawesome" style={{ backgroundColor: "#02D3DA" }}>
           <i
-            class="fa fa-lock"
+            className="fa fa-lock"
             aria-hidden="true"
             style={{ fontSize: "40px", color: "white" }}
           ></i>
@@ -27,7 +27,10 @@ const EnterpriseMaintain = () => {
           your videos are always on-brand no matter who is creating them for
           you.
         </div>
-        <div className="content_blog" style={{ color: "white",width:"450px",marginTop:"-3rem" }}>
+        <div
+          className="content_blog"
+          style={{ color: "white", width: "450px", marginTop: "-3rem" }}
+        >
           With approval and permission level workflows in place, you can always
           make sure everyone's on the right path and on brand. Comment and leave
           revision requests right in the video itself, scene by scene, allowing

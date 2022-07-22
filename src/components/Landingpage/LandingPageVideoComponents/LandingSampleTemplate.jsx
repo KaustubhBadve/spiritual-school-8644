@@ -16,11 +16,11 @@ import HoverVideoPlayer from "react-hover-video-player";
 // import { InfoIcon } from "@chakra-ui/icons";
 import LandingLoadingOverlay from "./LandingLoadingOverlay";
 import LandingPausedOverlay from "./LandingPausedOverlay";
-import "../Styles/Homepage.css"
+import "../Styles/Homepage.css";
 
 // {videoLink,Label}
 
-const LandingSampleTemplate = ({ imgp, video}) => {
+const LandingSampleTemplate = ({ imgp, video }) => {
   const [isVisible, setIsVisible] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -41,12 +41,10 @@ const LandingSampleTemplate = ({ imgp, video}) => {
       // className="video-sub"
     >
       <HoverVideoPlayer
-    
         videoSrc={video}
         pausedOverlay={<LandingPausedOverlay imgp={imgp} />}
         loadingOverlay={<LandingLoadingOverlay />}
       />
-     
 
       <Modal
         motionPreset="slideInBottom"

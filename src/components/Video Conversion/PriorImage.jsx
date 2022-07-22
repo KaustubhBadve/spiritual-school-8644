@@ -16,7 +16,7 @@ const PriorImage = () => {
           _hover={{ backgroundColor: "gray.300" }}
           height="50px"
           color="gray.700"
-          pl="20px"
+          pl="10px"
           border="1px solid black"
           borderRadius="30px"
           direction="row"

@@ -18,7 +18,7 @@ const EnterpriseCustomer = () => {
       <div>
         <div className="fontawesome" style={{ backgroundColor: "#F8558E" }}>
           <i
-            class="far fa-comments"
+            className="far fa-comments"
             style={{ fontSize: "40px", color: "white" }}
           ></i>
         </div>

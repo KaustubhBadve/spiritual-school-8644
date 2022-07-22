@@ -5,7 +5,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 
 const SieBar = () => {
   return (
-   <Stack  direction="column" pt="20px" color="grey" borderRight="1px solid #dddee6" height="100vh" gap="14px" justifyItems="left" width="80px" fontSize="17px">
+   <Stack  direction="column" pl="20px" pt="20px" color="grey" borderRight="1px solid #dddee6" height="100vh" gap="14px" justifyItems="left" width="80px" fontSize="17px">
            <Stack>
             <HamburgerIcon/>
             <Text fontSize="15px">Story</Text>
@@ -35,10 +35,7 @@ const SieBar = () => {
             <Box><i className="fa-brands fa-square-font-awesome-stroke"></i></Box>
             <Text fontSize="15px">Format</Text>
            </Stack>
-           <Stack>
-            <Box><i className="fa-solid fa-photo-film"></i></Box>
-            <Text>Story</Text>
-           </Stack>
+           
    </Stack>
   )
 }

@@ -6,39 +6,39 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 const SieBar = () => {
   return (
    <Stack  direction="column" pt="20px" color="grey" borderRight="1px solid #dddee6" height="100vh" gap="14px" justifyItems="left" width="80px" fontSize="17px">
-           <stack>
+           <Stack>
             <HamburgerIcon/>
             <Text fontSize="15px">Story</Text>
-           </stack>
+           </Stack>
 
-           <stack>
+           <Stack>
             <Box><i className="fa-solid fa-photo-film"></i></Box>
             <Text fontSize="15px">Media</Text>
-           </stack>
+           </Stack>
 
-           <stack>
+           <Stack>
             <Box><i className="fa-solid fa-icons"></i></Box>
             <Text fontSize="15px">Icons</Text>
-           </stack>
+           </Stack>
 
-           <stack>
+           <Stack>
             <Box><i className="fa-solid fa-music"></i></Box>
             <Text fontSize="15px">Music</Text>
-           </stack>
+           </Stack>
 
-           <stack>
+           <Stack>
             <Box><i className="fa-brands fa-accusoft"></i></Box>
             <Text fontSize="15px">Style</Text>
-           </stack>
+           </Stack>
 
-           <stack>
+           <Stack>
             <Box><i className="fa-brands fa-square-font-awesome-stroke"></i></Box>
             <Text fontSize="15px">Format</Text>
-           </stack>
-           <stack>
-            <Box><i class="fa-solid fa-photo-film"></i></Box>
+           </Stack>
+           <Stack>
+            <Box><i className="fa-solid fa-photo-film"></i></Box>
             <Text>Story</Text>
-           </stack>
+           </Stack>
    </Stack>
   )
 }

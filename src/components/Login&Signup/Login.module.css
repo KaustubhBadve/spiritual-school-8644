@@ -105,10 +105,9 @@
 .afterPassword span {
   color: #5846f6;
 }
-
 .handleSignUp {
   cursor: pointer;
-  height: 50px;
+  height: 49px;
   border-radius: 50px;
   font-size: 15px;
   color: white;
@@ -117,7 +116,6 @@
   width: 100%;
   text-align: center;
 }
-
 .handleSignUp:hover {
   background-color: #3722f3;
 }

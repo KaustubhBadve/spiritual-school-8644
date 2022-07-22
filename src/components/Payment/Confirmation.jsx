@@ -20,9 +20,12 @@ const Confirmation = () => {
               Order Status : Confirmed ✔
             </div>
             <div className={style.confirmation7}>
-              <img src="" alt="image to be enter TODO" />
+              <img
+                src="https://lumen5.com/learn/wp-content/uploads/2022/07/Blog-Thumbnail-Yellow-Turqoise-390x260.png"
+                alt="image to be enter"
+              />
             </div>
-            <button onClick={() => HandleStart()} className={style.checkbtn33}>
+            <button style={{width:"80%"}} onClick={() => HandleStart()} className={style.checkbtn33}>
               Lets Start
             </button>
             <div className={style.confirmation3}>
@@ -32,7 +35,7 @@ const Confirmation = () => {
           <div>
             <div className={style.confirmation4}>⦾ Order Details : </div>
             <div className={style.confirmation5}>
-              ➼ Plan :
+              ➼ Plan : {" "}
               <u>
                 <i>Starter - v2 (Yearly)</i>
               </u>

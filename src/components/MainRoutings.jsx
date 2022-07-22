@@ -9,13 +9,14 @@ import Signup from "./Redux/Signup";
 import CombineAllUserDas from "./user Dashboard/CombineAllUserDas";
 import Otp from "./Payment/Otp";
 import Confirmation from "./Payment/Confirmation";
+import Payment from "./Payment/Payment";
 
 const MainRoutings = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/pricing" element={<CompletePricing />} />
-      {/* <Route path='/payment' element={<Payment/>} */}
+      <Route path='/payment' element={<Payment/>} />
       <Route path="/otpcheck" element={<Otp />} />
       <Route path="/confirmation" element={<Confirmation/>} />
 

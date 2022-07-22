@@ -1,14 +1,32 @@
 import { useState } from 'react';
   import styles from "../Login&Signup/Login.module.css";
  import LoginSignup from "./LoginSignup.png"
+import { useNavigate,Link } from 'react-router-dom';
+
 //  import { Stack,Box,Button} from '@chakra-ui/react';
-  
+import { useDispatch } from 'react-redux';
+import { login } from '../../Redux/Action';
+import { LOGIN_SUCCESS } from '../../Redux/ActionType';
   export default function Login() {
   
     const [toggleType, setToggleType] = useState(false);
-    
-    
-    
+    const [username, setusername] = useState("")
+    const [password, setpassword] = useState("")
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+   
+   
+    const HandleLogin=()=>{
+      var obj1={
+        username,
+        password
+      }
+      dispatch(login(obj1)).then((r)=>{
+        if(r===LOGIN_SUCCESS)
+        navigate("/dashboard")
+      })
+    }
+
         return (
           <>
           <div style={{display:"flex"}}>
@@ -27,8 +45,7 @@ import { useState } from 'react';
       
               <div className={styles.formData}>
                 <div className={styles.name}>WORK EMAIL</div>
-                <input
-                />
+                <input value={username} onChange={(e)=>setusername(e.target.value)}/>
                 <div className={styles.passwordDivision}>
                   <div>PASSWORD</div>
                   <div
@@ -39,11 +56,11 @@ import { useState } from 'react';
                     <div>{toggleType ? "Hide" : "Show"}</div>
                   </div>
                 </div>
-                <input
+                <input value={password} onChange={(e)=>setpassword(e.target.value)}
                 />
               </div>
               <div>
-                <button className={styles.handleSignUp}>
+                    <button onClick={HandleLogin} className={styles.handleSignUp}>
                 Login
                 </button>
       
@@ -63,7 +80,7 @@ import { useState } from 'react';
               </div> 
       
               <div className={styles.bottomLines}>
-                Need a Lumen5 account? <a href="/login">Create an account</a>
+                Need a Lumen5 account? <Link to="/login">Create an account</Link>
               </div>
       
               <div className={styles.conclusionLine}>

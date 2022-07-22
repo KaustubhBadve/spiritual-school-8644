@@ -19,7 +19,7 @@ const LandingPage = () => {
       <BlogPost />
       <VideoImage />
       <Color />
-      <ExploreVideo/>
+      <ExploreVideo />
       <Caraousel />
       <TipsTricks />
       <FooterLandingPage />

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const FooterLandingPage = () => {
   return (
     <>
-      <div className="footer_container">
+      <div className="footer_container" style={{ marginTop: "31rem" }}>
         <div>
           <div>
             <img
@@ -60,16 +60,14 @@ const FooterLandingPage = () => {
       </div>
       <div className="footer-copyright">
         <div>
-          <span className="">
-            Copyright © 2022 Lumen5
-          </span>
+          <span className="">Copyright © 2022 Lumen5</span>
         </div>
         <div>
           <span className="">
-            <Link to="/terms/" className="text-white">
+            <Link to="#" className="text-white">
               Terms of Use &
             </Link>{" "}
-            <Link to="/privacy/" className="text-white">
+            <Link to="#" className="text-white">
               Privacy Policy
             </Link>
           </span>

@@ -1,15 +1,17 @@
-import { Modal,
-    ModalOverlay,
-    ModalContent,
-    ModalBody,
-    useDisclosure, } from '@chakra-ui/react'
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalBody,
+  useDisclosure,
+} from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import Company from "./Company";
 import "../Styles/Homepage.css";
 
 const LandingPageContent = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div>
       <div className="content_container">
@@ -26,9 +28,11 @@ const LandingPageContent = () => {
             <Link
               to="/auth/signup/"
               type="button"
+             
               className="lumen5-button btn btn-rounded btn-primary btn-lg"
+              id='AA'
             >
-              <span>Sign up free</span>
+              <span >Sign up free</span>
             </Link>
           </div>
         </div>
@@ -48,30 +52,31 @@ const LandingPageContent = () => {
         </div>
       </div>
       <div>
-        <Company/>
+        <Company />
       </div>
 
-      <Modal motionPreset='slideInBottom'size="4xl" blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
-    <ModalOverlay  />
-    <ModalContent >
-      <ModalBody>
-        
-        <video
-          width="1000px"
-          height="100%"
-          src="https://storage.googleapis.com/lumen5-site-images/website-assets/product-tour-header.mp4"
-          frameBorder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          controls
-        ></video>
-
-      </ModalBody>
-
-     
-    </ModalContent>
-  </Modal>
-
+      <Modal
+        motionPreset="slideInBottom"
+        size="4xl"
+        blockScrollOnMount={false}
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <ModalBody>
+            <video
+              width="1000px"
+              height="100%"
+              src="https://storage.googleapis.com/lumen5-site-images/website-assets/product-tour-header.mp4"
+              frameBorder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              controls
+            ></video>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </div>
   );
 };

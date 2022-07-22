@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import pricing from "./Pricing.png";
 
 const TipsTricks = () => {
   return (
@@ -20,7 +21,7 @@ const TipsTricks = () => {
             <h5>Video Marketing: How to Get Started [Step by Step]</h5>
           </div>
           <div className="tips-footer">
-            <Link to="/learn/video-marketing/">Read story →</Link>
+            <Link to="#">Read story →</Link>
           </div>
         </div>
         <div className="">
@@ -33,10 +34,12 @@ const TipsTricks = () => {
             </div>
             <div className="tips-blog">
               <p>BLOG</p>
-              <h5>How to Increase Your Facebook Video Views [Complete Guide]</h5>
+              <h5>
+                How to Increase Your Facebook Video Views [Complete Guide]
+              </h5>
             </div>
             <div className="tips-footer">
-              <Link to="/learn/video-marketing/">Read story →</Link>
+              <Link to="#">Read story →</Link>
             </div>
           </div>
         </div>
@@ -53,10 +56,13 @@ const TipsTricks = () => {
               <h5>The Importance of Video in Your Content Strategy</h5>
             </div>
             <div className="tips-footer">
-              <Link to="/learn/video-marketing/">Read story →</Link>
+              <Link to="#">Read story →</Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className="pricing">
+        <img src={pricing} alt="" />
       </div>
     </div>
   );

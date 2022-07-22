@@ -22,7 +22,11 @@ const Color = () => {
             class="fa fa-file-text-o"
             style={{ fontSize: "40px", color: "white" }}
           ></i> */}
-          <i class="fa fa-paint-brush" aria-hidden="true" style={{fontSize:"40px",color:"white"}}></i>
+          <i
+            className="fa fa-paint-brush"
+            aria-hidden="true"
+            style={{ fontSize: "40px", color: "white" }}
+          ></i>
         </div>
         <div className="content_span">
           <span>
@@ -37,12 +41,12 @@ const Color = () => {
           colors, and more.
         </div>
         <div className="blog-start">
-          <Link to="/auth/signup/" class="text-primary">
+          <Link to="#" className="text-primary">
             Get started for free →
           </Link>
         </div>
         <div className="hr"></div>
-        <div class="blog-lumen">
+        <div className="blog-lumen">
           “Whenever I got in touch with Lumen5 I felt like my suggestions
           mattered and I was being listened to. It’s like I’m co-creating in a
           tiny way. It’s a great feeling.”

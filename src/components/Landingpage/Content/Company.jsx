@@ -1,6 +1,5 @@
-import { Box,Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
-
 
 const Company = () => {
   return (
@@ -19,7 +18,6 @@ const Company = () => {
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-color.png" />
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mitsubishi-color.png" />
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-color.png" />
-       
       </Flex>
     </div>
   );

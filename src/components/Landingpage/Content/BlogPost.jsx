@@ -8,13 +8,18 @@ const BlogPost = () => {
         <img
           src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png"
           alt="video-logo"
-          style={{ width: "510px", height: "380px",marginTop:"9rem",marginLeft:"-3rem" }}
+          style={{
+            width: "510px",
+            height: "380px",
+            marginTop: "9rem",
+            marginLeft: "-3rem",
+          }}
         />
       </div>
       <div>
         <div className="fontawesome">
           <i
-            class="fa fa-file-text-o"
+            className="fa fa-file-text-o"
             style={{ fontSize: "40px", color: "white" }}
           ></i>
         </div>
@@ -32,12 +37,12 @@ const BlogPost = () => {
           message.
         </div>
         <div className="blog-start">
-          <Link to="/auth/signup/" class="text-primary">
+          <Link to="#" className="text-primary">
             Get started for free →
           </Link>
         </div>
         <div className="hr"></div>
-        <div class="blog-lumen">
+        <div className="blog-lumen">
           “Lumen5 has enabled us to create more videos and drive more traffic,
           while having more time to invest in other projects.”
         </div>
@@ -47,7 +52,7 @@ const BlogPost = () => {
               loading="lazy"
               className="user-thumbnail rounded-circle"
               src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-drew-s.jpg"
-              style={{width:"52px",height:"52px"}}
+              style={{ width: "52px", height: "52px" }}
             />
           </div>
           <div className="d-flex flex-column mx-3">

@@ -6,7 +6,11 @@ const VideoImage = () => {
     <div className="content_container" style={{ backgroundColor: "white" }}>
       <div>
         <div className="fontawesome" style={{ backgroundColor: "#02D3DA" }}>
-        <i class="fa fa-book" aria-hidden="true" style={{fontSize:"40px",color:"white"}}></i>
+          <i
+            className="fa fa-book"
+            aria-hidden="true"
+            style={{ fontSize: "40px", color: "white" }}
+          ></i>
         </div>
         <div className="content_span">
           <span>
@@ -23,7 +27,7 @@ const VideoImage = () => {
           to create the perfect video.
         </div>
         <div className="blog-start">
-          <Link to="/auth/signup/" className="text-primary">
+          <Link to="#" className="text-primary">
             View plans →
           </Link>
         </div>
@@ -45,7 +49,10 @@ const VideoImage = () => {
           <div className="d-flex flex-column mx-3">
             <div>
               <strong>Julia Olennikova</strong>
-              <span>, Product Marketing<br/> Manager</span>
+              <span>
+                , Product Marketing
+                <br /> Manager
+              </span>
             </div>
             <div>
               <img

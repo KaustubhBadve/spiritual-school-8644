@@ -1,8 +1,9 @@
 import "./App.css";
 
 
+import MainRoutings from "./components/MainRoutings";
 
-import MainRoutings from './components/MainRoutings';
+
 
 
 

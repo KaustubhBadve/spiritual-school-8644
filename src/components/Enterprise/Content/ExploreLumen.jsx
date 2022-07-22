@@ -18,7 +18,7 @@ const ExploreLumen = () => {
       <div>
         <div className="fontawesome">
           <i
-            class="fa fa-file-text-o"
+            className="fa fa-file-text-o"
             style={{ fontSize: "40px", color: "white" }}
           ></i>
         </div>

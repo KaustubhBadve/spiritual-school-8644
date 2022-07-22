@@ -9,15 +9,19 @@ const NavbarLandingPage = () => {
   const handleDropdown = () => {
     setCreate(!create);
     setLearn(false);
+    console.log(create);
   };
   const handleLearn = () => {
     setLearn(!learn);
     setCreate(false);
   };
   return (
-    <div style={{transition:"0.4s"}}>
-      <nav className="navbar navbar-expand-lg fixed-top navbar-light px-md-5" style={{transition:"0.4s"}}>
-        <div className="d-flex pl-md-4 ml-md-5" style={{transition:"0.4s"}}>
+    <div style={{ transition: "0.4s" }}>
+      <nav
+        className="navbar navbar-expand-lg fixed-top navbar-light px-md-5"
+        style={{ transition: "0.4s" }}
+      >
+        <div className="d-flex pl-md-4 ml-md-5" style={{ transition: "0.4s" }}>
           <Link to="/" className="navbar-brand d-flex align-items-center">
             <img
               className="rounded float-left nav-bar__logo"
@@ -41,6 +45,7 @@ const NavbarLandingPage = () => {
         <div
           className="collapse navbar-collapse mr-lg-5 justify-content-end"
           id="collapsedBarId"
+          style={{ marginLeft: "38%" }}
         >
           <div className="d-flex">
             <div className="q-flex">
@@ -70,204 +75,59 @@ const NavbarLandingPage = () => {
                         aria-labelledby="create-dropdown"
                         style={{ columnCount: 2 }}
                       >
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/photo-video-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Photo Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/facebook-video-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Facebook Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/youtube-intro-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           YouTube Intro Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/instagram-video-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Instagram Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/instagram-story-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Instagram Story Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/promo-video-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Promo Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/video-ad-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Video Ad Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/marketing-video"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Marketing Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/linkedin-video/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           LinkedIn Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/business-video-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Business Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/ecommerce-video/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Ecommerce Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/explainer-videos/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Explainer Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/slideshow-maker/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Slideshow Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/education-video/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Education Video Maker
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/video-editor/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Video Editor
                         </Link>
-                        <Link
-                          className="dropdown-item1 font-l5"
-                          to="/voiceover/"
-                        >
+                        <Link className="dropdown-item1 font-l5" to="#">
                           Voiceover
                         </Link>
                       </div>
                     )}
 
-                    {/* <div
-                      className="dropdown-menu1"
-                      aria-labelledby="create-dropdown"
-                      style={{ columnCount: 2 }}
-                    >
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/photo-video-maker/"
-                      >
-                        Photo Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/facebook-video-maker/"
-                      >
-                        Facebook Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/youtube-intro-maker/"
-                      >
-                        YouTube Intro Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/instagram-video-maker/"
-                      >
-                        Instagram Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/instagram-story-maker/"
-                      >
-                        Instagram Story Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/promo-video-maker/"
-                      >
-                        Promo Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/video-ad-maker/"
-                      >
-                        Video Ad Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/marketing-video"
-                      >
-                        Marketing Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/linkedin-video/"
-                      >
-                        LinkedIn Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/business-video-maker/"
-                      >
-                        Business Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/ecommerce-video/"
-                      >
-                        Ecommerce Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/explainer-videos/"
-                      >
-                        Explainer Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/slideshow-maker/"
-                      >
-                        Slideshow Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/education-video/"
-                      >
-                        Education Video Maker
-                      </Link>
-                      <Link
-                        className="dropdown-item1 font-l5"
-                        to="/video-editor/"
-                      >
-                        Video Editor
-                      </Link>
-                      <Link className="dropdown-item1 font-l5" to="/voiceover/">
-                        Voiceover
-                      </Link>
-                    </div> */}
+
+                
                   </li>
 
                   <li className="nav-item mr-md-2">
@@ -289,7 +149,7 @@ const NavbarLandingPage = () => {
                   <li className="nav-item mr-md-2">
                     <Link
                       className="nav-link text-decoration-none text-dark font-l5 font-l5--regular"
-                      to="/case-studies/"
+                      to=""
                     >
                       Case studies
                     </Link>
@@ -316,16 +176,16 @@ const NavbarLandingPage = () => {
                         className="dropdown-menu1"
                         aria-labelledby="learn-dropdown"
                       >
-                        <Link className="dropdown-item1" to="/learn/resources">
+                        <Link className="dropdown-item1" to="#">
                           Resources
                         </Link>
-                        <Link className="dropdown-item1" to="/learn/">
+                        <Link className="dropdown-item1" to="#">
                           Blog
                         </Link>
                       </div>
                     )}
                   </li>
-                  <li className="nav-item mr-md-2 mb-2">
+                  <li className="nav-item mr-md-2 mb-2 onhover">
                     <Link
                       to="/auth/login/"
                       type="button"

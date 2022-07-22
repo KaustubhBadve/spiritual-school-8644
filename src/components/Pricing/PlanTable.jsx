@@ -201,7 +201,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           {/* second */}
@@ -226,16 +226,16 @@ const PlanTable = () => {
               <Text textAlign={"start"}>Landscape</Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -269,16 +269,16 @@ const PlanTable = () => {
               <Text textAlign={"start"}>Branded outro</Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -286,16 +286,16 @@ const PlanTable = () => {
               <Text textAlign={"start"}>Popular templates</Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -303,16 +303,16 @@ const PlanTable = () => {
               <Text textAlign={"start"}>Custom outro</Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -321,13 +321,13 @@ const PlanTable = () => {
             </Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -336,13 +336,13 @@ const PlanTable = () => {
             </Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -352,10 +352,10 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -365,10 +365,10 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -379,7 +379,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           {/* Media */}
@@ -397,16 +397,16 @@ const PlanTable = () => {
               </Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -414,16 +414,16 @@ const PlanTable = () => {
               <Text textAlign={"start"}>Upload your own videos & photos</Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -431,16 +431,16 @@ const PlanTable = () => {
               <Text textAlign={"start"}>Upload your own audio tracks</Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -449,13 +449,13 @@ const PlanTable = () => {
             </Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -473,16 +473,16 @@ const PlanTable = () => {
               <Text textAlign={"start"}>Record your own voiceover</Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -491,13 +491,13 @@ const PlanTable = () => {
             </Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -508,7 +508,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
 
@@ -528,7 +528,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>— </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -539,7 +539,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>— </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -550,7 +550,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>— </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -561,7 +561,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>— </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -572,7 +572,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>— </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           {/* support */}
@@ -588,16 +588,16 @@ const PlanTable = () => {
               <Text textAlign={"start"}>Help center access</Text>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -606,13 +606,13 @@ const PlanTable = () => {
             </Td>
             <Td>—</Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -623,7 +623,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>— </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
           <Tr>
@@ -634,7 +634,7 @@ const PlanTable = () => {
             <Td>—</Td>
             <Td>— </Td>
             <Td>
-              <Box as={CheckIcon} color="green.500"></Box>
+              <Box as={CheckIcon} color="green.300"></Box>
             </Td>
           </Tr>
         </Tbody>

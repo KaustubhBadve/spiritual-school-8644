@@ -12,7 +12,7 @@ const NavbarTempSelc = () => {
          </Stack>
          <Stack direction="row" borderLeft="1px solid #dddee6" pl="13px">
           <BellIcon fontSize="25px" color="#5d6575"/>
-          <Box borderRadius="50%" width="30px" height="30px" bg="#dddee6">K</Box>
+          <Box borderRadius="50%" textAlign="center" width="30px" height="30px" bg="#dddee6">K</Box>
          </Stack>
     </Box>
   )

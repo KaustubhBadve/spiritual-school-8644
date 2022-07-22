@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
   import styles from "../Login&Signup/SignUp.module.css";
  import LoginSignup from "./LoginSignup.png"
 //  import { Stack,Box,Button} from '@chakra-ui/react';
@@ -88,7 +89,7 @@ import { useState } from 'react';
               </div> 
       
               <div className={styles.bottomLines}>
-                Already have a Lumen5 account? <a href="/login">Log in</a>
+                Already have a Lumen5 account? <Link to="/auth/login">Log in</Link>
               </div>
       
               <div className={styles.conclusionLine}>

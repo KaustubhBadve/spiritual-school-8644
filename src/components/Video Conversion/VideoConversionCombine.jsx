@@ -7,7 +7,7 @@ const VideoConversionCombine = () => {
 
     setTimeout(() => {
         setloading(false)
-      }, "4000")
+      }, "1000")
 
   return (
     <div>{loading ? <LoadingafterTemplate/> : <VideoConversion/>}</div>

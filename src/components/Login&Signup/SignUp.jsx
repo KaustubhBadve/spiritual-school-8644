@@ -11,30 +11,29 @@ export default function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   const [description, setdescription] = useState("")
   const [toggleType, setToggleType] = useState(false);
   const [mobile, setmobile] = useState("")
-const dispatch=useDispatch()
-const navigate=useNavigate()
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
   const otp = useRef();
-const handleSignUp = () => {
- 
-let obj={
-  username:name,
-  email:email,
-  name:"aa",
-  password:password,
-  mobile:mobile,
-  description:"AsAAA"
-}
-dispatch(register(obj)).then((r)=>{
-  if (r == REGISTER_SUCCESS)
-  {
-    navigate("/auth/login")
-  }
-})
-console.log(obj)
+  const handleSignUp = () => {
+
+    let obj = {
+      username: name,
+      email: email,
+      name: "aa",
+      password: password,
+      mobile: mobile,
+      description: "AsAAA"
+    }
+    dispatch(register(obj)).then((r) => {
+      if (r == REGISTER_SUCCESS) {
+        navigate("/auth/login")
+      }
+    })
+    console.log(obj)
   };
 
   return (
@@ -55,7 +54,7 @@ console.log(obj)
 
             <div className={styles.formData}>
               <div className={styles.name}>FIRST NAME</div>
-              <input value={email} onChange={(e)=>setEmail(e.target.value)}/>
+              <input value={email} onChange={(e) => setEmail(e.target.value)} />
               <div className={styles.name}>WORK EMAIL</div>
               <input value={name} onChange={(e) => setName(e.target.value)} />
               <div className={styles.name}>MOBILE NUMBER</div>
@@ -70,7 +69,7 @@ console.log(obj)
                   <div>{toggleType ? "Hide" : "Show"}</div>
                 </div>
               </div>
-              <input value={password} onChange={(e)=>setPassword(e.target.value)}/>
+              <input value={password} onChange={(e) => setPassword(e.target.value)} />
             </div>
 
             {/* <div className={styles.afterPassword}>
@@ -92,8 +91,8 @@ console.log(obj)
               </div>
             </div> */}
 
-            <div style={{marginTop:"30px"}}>
-              <button onClick={handleSignUp}  className={styles.handleSignUp}>
+            <div style={{ marginTop: "30px" }}>
+              <button onClick={handleSignUp} className={styles.handleSignUp}>
                 Create an account
               </button>
 

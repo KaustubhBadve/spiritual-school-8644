@@ -12,7 +12,7 @@ const FrequentQues = () => {
     >
      
         <HStack h={"auto"} w={"100%"} >
-          <Box h={"auto"} padding={"10px"} w={"50%"}       
+          <Box h={"auto"} padding={"10px"} w={"55%"}       
 >
             <Text textAlign={"left"} fontSize={"20px"}>
               What if I only need Lumen5 for a set amount of time?
@@ -33,7 +33,7 @@ const FrequentQues = () => {
         </HStack>
         {/* 2nd flex */}
         <HStack h={"auto"} w={"100%"} mt={"50px"}>
-          <Box h={"auto"} padding={"10px"} w={"50%"}>
+          <Box h={"auto"} padding={"10px"} w={"55%"}>
             <Text textAlign={"left"} fontSize={"20px"}>
               Do you have a non-profit discount?
             </Text>

@@ -1,25 +1,12 @@
-
-import './App.css';
-
-import MainRoutings from './components/MainRoutings';
-import CombineAllUsersDas from "./components/user Dashboard/CombineAllUserDas"
-import TemplateSelectionCombine from "./components/Template Selection/TempSelectionCombine"
-
-
-
-import TempSelection from './components/Template Selection/TempSelectionCombine';
+import "./App.css";
+import MainRoutings from "./components/MainRoutings";
 
 function App() {
   return (
     <div className="App">
-     <MainRoutings/>
+      <MainRoutings />
     </div>
   );
-
- 
-    
-
-
 }
 
 export default App;

@@ -1,15 +1,17 @@
 .btnGetStarted:hover {
-  background-color: #5846f6;
   color: white;
 }
 
 Th {
   text-align: center !important;
 }
+Thead > Tr > Th :nth-child(1) {
+  text-align: center !important;
+}
 
 Td {
   text-align: center !important;
-  font-size: 20px;
+  font-size: 18px;
 }
 .stybillActive {
   background-color: #48505e;

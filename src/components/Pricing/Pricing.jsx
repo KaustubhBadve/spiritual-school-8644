@@ -15,7 +15,6 @@ import PricingCard from "./PricingCard";
 import styles from "./Pricing.module.css";
 import FrequentQues from "./FrequentQues";
 // import pricingImg from "./Pricing.png";
-  
 
 const Pricing = () => {
   const [billMonthly, setBillMonthly] = useState(true);
@@ -35,8 +34,7 @@ const Pricing = () => {
     setBillYearly(true);
   };
   return (
-    <Box align="center" justify="center" mt={"150px"} >
-      
+    <Box align="center" justify="center" mt={"150px"}>
       <Container maxW={"50%"}>
         <Box justifyContent={"center"} alignItems={"center"} margin={"auto"}>
           <Text
@@ -49,14 +47,19 @@ const Pricing = () => {
             PRICING
           </Text>
         </Box>
-        <Box justifyContent={"center"} alignItems={"center"} margin={"auto"}>
+        <Box
+          w={"800px"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          marginLeft={"-100px"}
+        >
           <Text
             textAlign={"center"}
             pt={"20px"}
             fontSize={"calc(1.35625rem + 1.275vw)"}
-            fontWeight="600"
+            fontWeight="650"
             lineHeight={"50px"}
-            letterSpacing="normal"
+            letterSpacing="2px"
           >
             Plans for your video content creation strategy
           </Text>
@@ -68,10 +71,12 @@ const Pricing = () => {
           border={"1px solid #48505e"}
           w={"253px"}
           borderRadius={"30px"}
-          m={"50px 0px 90px"}
+          mt={"50px"}
+          ml={"170px"}
+          mb={"80px"}
         >
-          <Flex align="center" justify="center"  >
-            <ButtonGroup variant="outline" spacing={"-0.1"} cursor={"pointer"}  >
+          <Flex align="center" justify="center">
+            <ButtonGroup variant="outline" spacing={"-0.1"} cursor={"pointer"}>
               <Button
                 borderRadius={"30px"}
                 border={"none"}
@@ -106,7 +111,13 @@ const Pricing = () => {
           </Flex>
         </Box>
       </Container>
-      <Flex justifyContent={"center"} mt="30px" gap={"20px"}>
+      <Flex
+        justifyContent={"center"}
+        mt="30px"
+        margin={"auto"}
+        gap={"20px"}
+        w={"80%"}
+      >
         <PricingCard
           sizeGiven={"100%"}
           title="Community"
@@ -205,7 +216,12 @@ const Pricing = () => {
       {/* Choose plan table  */}
       <Box h={"auto"} w={"100%"}>
         <Container h={"auto"} maxW={"1260px"}>
-          <Text letterSpacing={"0.7px"} fontSize="30px" fontWeight={"440"} m={"40px 0px 40px"}>
+          <Text
+            letterSpacing={"0.7px"}
+            fontSize="30px"
+            fontWeight={"440"}
+            m={"40px 0px 40px"}
+          >
             Choose the plan that's right for you
           </Text>
           <PlanTable />

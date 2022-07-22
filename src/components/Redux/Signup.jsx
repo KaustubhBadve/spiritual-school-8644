@@ -2,7 +2,6 @@
   import { useState } from 'react';
   import styles from "../Styles/signup.module.css";
   
-  
   export default function Signup() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");

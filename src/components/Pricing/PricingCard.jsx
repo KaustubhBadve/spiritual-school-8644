@@ -18,29 +18,33 @@ const PricingCard = ({
     <Box>
       <Box
         textAlign={"left"}
-        h={"410px"}
-        w={"250px"}
+        h={"39  0px"}
+        w={"210px"}
         border={"2px solid #f1f2f5"}
         borderRadius={"10px"}
         padding={"10px 20px 40px"}
         marginBottom={"40px"}
+        justifyContent={"center"}
+        margin={"auto"}
       >
         <Box>
           <Text
             mt={"50px"}
-            fontWeight={"649"}
-            fontSize={"25px"}
+            fontWeight={"600"}
+            fontSize={"21px"}
             lineHeight={"22px"}
             color={"black"}
           >
             {title}
           </Text>
-          <Text mt={"10px"}>{description}</Text>
+          <Text mt={"10px"} fontSize="12px" lineHeight="18px">
+            {description}
+          </Text>
         </Box>
-        <Box mt={"50px"} mb={"80px"}>
+        <Box mt={"40px"} mb={"50px"}>
           <Text
             fontWeight={"650"}
-            fontSize={"29px"}
+            fontSize={"25px"}
             color={"black"}
             lineHeight={"22px"}
           >
@@ -59,10 +63,16 @@ const PricingCard = ({
               </span>
             )}
           </Text>
-          <Text mt={"10px"}>{costDescription}</Text>
+          <Text mt={"10px"} fontSize={"12px"} lineHeight="18px">
+            {costDescription}
+          </Text>
         </Box>
-        <Box mb={"40px"}>
-          <BtnComponent label={btnLabel} sizeGiven={sizeGiven}  status={status} />
+        <Box mb={"10px"}>
+          <BtnComponent
+            label={btnLabel}
+            sizeGiven={sizeGiven}
+            status={status}
+          />
         </Box>
       </Box>
       <Box textAlign={"left"}>
@@ -73,7 +83,7 @@ const PricingCard = ({
           {includeList.map((item, index) => (
             <ListItem>
               <ListIcon key={index} as={CheckIcon} color="green.500" />
-              {item.title}
+              <span fontSize={"12px"} > {item.title}</span>
             </ListItem>
           ))}
         </List>

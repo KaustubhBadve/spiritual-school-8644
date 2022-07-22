@@ -18,6 +18,12 @@ const NavbarBlogConversion = () => {
       justifyContent="space-between"
       borderBottom="1px solid #dddee6"
       p="13px"
+      position="sticky"
+      width="100%"
+      backgroundColor="white"
+      top="0.1%"
+      left="1%"
+      zIndex={1}
     >
       <Stack direction="row" alignItems="center">
         <Image

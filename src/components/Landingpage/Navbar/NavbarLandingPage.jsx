@@ -15,9 +15,9 @@ const NavbarLandingPage = () => {
     setCreate(false);
   };
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg fixed-top navbar-light header-container px-md-5">
-        <div className="d-flex pl-md-4 ml-md-5">
+    <div style={{transition:"0.4s"}}>
+      <nav className="navbar navbar-expand-lg fixed-top navbar-light px-md-5" style={{transition:"0.4s"}}>
+        <div className="d-flex pl-md-4 ml-md-5" style={{transition:"0.4s"}}>
           <Link to="/" className="navbar-brand d-flex align-items-center">
             <img
               className="rounded float-left nav-bar__logo"
@@ -64,7 +64,112 @@ const NavbarLandingPage = () => {
                       ></i>
                     </Link>
 
-                    <div
+                    {create && (
+                      <div
+                        className="dropdown-menu1"
+                        aria-labelledby="create-dropdown"
+                        style={{ columnCount: 2 }}
+                      >
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/photo-video-maker/"
+                        >
+                          Photo Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/facebook-video-maker/"
+                        >
+                          Facebook Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/youtube-intro-maker/"
+                        >
+                          YouTube Intro Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/instagram-video-maker/"
+                        >
+                          Instagram Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/instagram-story-maker/"
+                        >
+                          Instagram Story Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/promo-video-maker/"
+                        >
+                          Promo Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/video-ad-maker/"
+                        >
+                          Video Ad Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/marketing-video"
+                        >
+                          Marketing Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/linkedin-video/"
+                        >
+                          LinkedIn Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/business-video-maker/"
+                        >
+                          Business Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/ecommerce-video/"
+                        >
+                          Ecommerce Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/explainer-videos/"
+                        >
+                          Explainer Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/slideshow-maker/"
+                        >
+                          Slideshow Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/education-video/"
+                        >
+                          Education Video Maker
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/video-editor/"
+                        >
+                          Video Editor
+                        </Link>
+                        <Link
+                          className="dropdown-item1 font-l5"
+                          to="/voiceover/"
+                        >
+                          Voiceover
+                        </Link>
+                      </div>
+                    )}
+
+                    {/* <div
                       className="dropdown-menu1"
                       aria-labelledby="create-dropdown"
                       style={{ columnCount: 2 }}
@@ -162,7 +267,7 @@ const NavbarLandingPage = () => {
                       <Link className="dropdown-item1 font-l5" to="/voiceover/">
                         Voiceover
                       </Link>
-                    </div>
+                    </div> */}
                   </li>
 
                   <li className="nav-item mr-md-2">

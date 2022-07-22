@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const FooterLandingPage = () => {
   return (
     <>
-      <div className="footer_container">
+      <div className="footer_container" style={{marginTop:"31rem"}}>
         <div>
           <div>
             <img

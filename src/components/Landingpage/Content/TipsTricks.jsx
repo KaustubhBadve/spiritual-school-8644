@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import pricing from "./Pricing.png"
 
 const TipsTricks = () => {
   return (
@@ -57,6 +58,9 @@ const TipsTricks = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="pricing">
+        <img src={pricing} alt=""/>
       </div>
     </div>
   );

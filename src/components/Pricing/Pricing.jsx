@@ -18,19 +18,17 @@ import styles from "./Pricing.module.css";
 import FrequentQues from "./FrequentQues";
 import pricingImg from "./pricing.png";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Pricing = () => {
   const [billMonthly, setBillMonthly] = useState(true);
   const [billYearly, setBillYearly] = useState(false);
-  const isAuth = true;
+  const isAuth = useSelector((state) => state.isAuth);
   const navigate = useNavigate();
 
   const handleSignUp = () => {
-    if (isAuth) {
-      navigate("/dashboard");
-    }
-    //if is auth true go to dashboard
-    // else go to signup
+    if (isAuth) navigate("/dashboard");
+    else navigate("/auth/signup");
   };
   const handleBillMonthly = () => {
     setBillMonthly(true);
@@ -40,6 +38,7 @@ const Pricing = () => {
     setBillMonthly(false);
     setBillYearly(true);
   };
+  
   return (
     <Box align="center" justify="center" mt={"150px"}>
       <Box maxW={"100%"}>
@@ -85,7 +84,6 @@ const Pricing = () => {
           borderRadius={"30px"}
           mt={"50px"}
           mb={"80px"}
-          
         >
           <Flex align="center" justify="center">
             <ButtonGroup variant="outline" spacing={"-0.1"} cursor={"pointer"}>
@@ -227,7 +225,7 @@ const Pricing = () => {
           </Box>
 
           <Box>
-            <BtnComponent  status={"active"} label={"Get Started Today"}   />
+            <BtnComponent status={"active"} label={"Get Started Today"} />
           </Box>
         </HStack>
       </Box>

@@ -22,8 +22,16 @@ const ReviewCard = ({ img, title, writter }) => {
         </Box>
       </Box>
       <Box background={"white"} padding={"33px"}>
-        <Text textAlign="center" fontSize="16px">"{title}"</Text>
-        <Text textAlign="center" fontSize="12px" textTransform={"uppercase"} mt={"17px"} color="gray">
+        <Text textAlign="center" fontSize="16px">
+          "{title}"
+        </Text>
+        <Text
+          textAlign="center"
+          fontSize="12px"
+          textTransform={"uppercase"}
+          mt={"17px"}
+          color="gray"
+        >
           {writter}
         </Text>
       </Box>

@@ -1,11 +1,13 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import styles from "./Pricing.module.css";
+
 const BtnComponent = ({ label, sizeGiven, status }) => {
   const navigate = useNavigate();
-  const isAuth = true;
-  
+  const isAuth = useSelector((state) => state.isAuth);
+
   const handleBtnClick = () => {
     if (label === "Get Started Today" && isAuth) {
       return navigate("/dashboard");

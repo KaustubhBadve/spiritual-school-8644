@@ -169,7 +169,7 @@ const NavbarLandingPage = () => {
                       </div>
                     )}
 
-                    <div
+                    {/* <div
                       className="dropdown-menu1"
                       aria-labelledby="create-dropdown"
                       style={{ columnCount: 2 }}
@@ -267,7 +267,7 @@ const NavbarLandingPage = () => {
                       <Link className="dropdown-item1 font-l5" to="/voiceover/">
                         Voiceover
                       </Link>
-                    </div>
+                    </div> */}
                   </li>
 
                   <li className="nav-item mr-md-2">

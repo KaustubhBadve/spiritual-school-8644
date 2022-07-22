@@ -1,4 +1,5 @@
 import React from "react";
+import {useNavigate} from "react-router-dom"
 import {
   Box,
   Center,
@@ -10,6 +11,7 @@ import {
 import AllvideosCard from "./AllvideosCard";
 
 const Allvideos = () => {
+  const navigate=useNavigate()
   return (
     <div>
       <Heading textAlign="left" margin="20px">
@@ -24,6 +26,8 @@ const Allvideos = () => {
         <hr style={{ backgroundColor: "#dddde6" }} />
         <Stack gap="20px" direction="row">
           <Box
+            onClick={() => navigate("/selectTemplate")}
+            cursor="pointer"
             bg={useColorModeValue("white", "gray.800")}
             border={"1px solid #dddee6"}
             rounded={"md"}

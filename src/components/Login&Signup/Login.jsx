@@ -1,7 +1,8 @@
 import { useState } from 'react';
   import styles from "../Login&Signup/Login.module.css";
  import LoginSignup from "./LoginSignup.png"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
+
 //  import { Stack,Box,Button} from '@chakra-ui/react';
 import { useDispatch } from 'react-redux';
 import { login } from '../../Redux/Action';
@@ -22,8 +23,7 @@ import { LOGIN_SUCCESS } from '../../Redux/ActionType';
       }
       dispatch(login(obj1)).then((r)=>{
         if(r===LOGIN_SUCCESS)
-        // navigate("/dashboard")
-        console.log("Success")
+        navigate("/dashboard")
       })
     }
 
@@ -80,7 +80,7 @@ import { LOGIN_SUCCESS } from '../../Redux/ActionType';
               </div> 
       
               <div className={styles.bottomLines}>
-                Need a Lumen5 account? <a href="/login">Create an account</a>
+                Need a Lumen5 account? <Link to="/login">Create an account</Link>
               </div>
       
               <div className={styles.conclusionLine}>

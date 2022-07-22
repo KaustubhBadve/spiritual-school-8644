@@ -21,6 +21,7 @@ const MainRoutings = () => {
       <Route path='/payment' element={<Payment/>} />
       <Route path="/otpcheck" element={<Otp />} />
       <Route path="/confirmation" element={<Confirmation/>} />
+
       <Route path="/enterprise" element={<EnterpriseContent/>} />
       {/* TODO  req auth */}
       <Route path="/auth/login" element={<Login />} />

@@ -1,9 +1,9 @@
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .pl-md-5,
   .px-md-5 {
     padding-left: 3rem !important;
   }
-} */
+}
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -15,12 +15,12 @@
   z-index: 1030;
 }
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
-} */
+}
 .navbar {
   position: fixed;
   display: flex;
@@ -31,7 +31,7 @@
   background-color: #fafafb;
   transition: all 0.5s ease;
 }
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .pl-md-4,
   .px-md-4 {
     padding-left: 1.5rem !important;
@@ -43,7 +43,7 @@
   .mx-md-5 {
     margin-left: 3rem !important;
   }
-} */
+}
 .d-flex {
   display: flex !important;
 }
@@ -90,11 +90,11 @@
   background: 50%/100% 100% no-repeat;
 }
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar-expand-lg .navbar-toggler {
     display: none;
   }
-} */
+}
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -104,22 +104,22 @@
   border-radius: 0.25rem;
 }
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
-} */
+}
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
 }
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
   }
-} */
+}
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -130,12 +130,12 @@
 .navbar .navbar-nav {
   align-items: center;
 }
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .mr-md-2,
   .mx-md-2 {
     margin-right: 0.5rem !important;
   }
-} */
+}
 .dropup,
 .dropright,
 .dropdown,
@@ -149,12 +149,12 @@
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.5);
 }
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
-} */
+}
 .font-l5.font-l5--regular {
   font-size: 1rem;
   font-weight: 400;
@@ -185,17 +185,28 @@ a.label {
 .text-dark {
   color: #48505e !important;
 }
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu1 {
     position: absolute;
   }
-} */
+}
 .navbar-nav .dropdown-menu1 {
   position: static;
   float: none;
 }
+/* .dropdown-menu1{
 
+  .dropdown-menu1 {
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
 
+    /* display: none; */
+    .p-flex li{
+      color: white;
+    
+    }
 .dropdown-menu1 {
   position: relative;
   top: 100%;
@@ -1027,10 +1038,96 @@ a.label {
   border: 1px solid red;
   border-radius: 10px;
 }
-.pricing{
-  width:80%;
-  margin: auto;
-  margin-top: 2rem;
-  padding: 2rem ;
+.content-container{
+  height:780px;
+  width:100%;
+  margin: 8px 0px;
+  padding: 64px 32px;
+  background-color: #24282f;
 }
+.content-container>div{
+  width:75%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  gap:6%;
+ 
+}
+.content-container>div div{
+  width:460px;
+  padding: 0px 48px 0px 0px;
+}
+.content-scale{
+  height:284px;
+  width:475px;
+  margin: 0px 0px 48px;
+  padding: 0px 15px;
+}
+.content-scale>h4{
+  color: white;
+  font-size: 1.3125rem;
+  line-height: 1.33;
+  letter-spacing: normal;
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  font-weight: 700 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.content-scale>span{
+  font-size: 1rem;
+    font-family: "Poppins",sans-serif;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: .01em;
+    color: white;
+}
+.explore-para{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: .01em;
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+  width:450px
+}
+.enterprise-review{
+  height:456px;
+  width:100%;
+  background-color: #24282f;
+  margin: 0px 0px 32px;
+  padding: 64px 32px;
+}
+.enterprise-subreview{
+  width:75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap:5%
+}
+
+.review-report{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: .01em;
+  font-family: "Poppins",sans-serif;
+  font-style: normal;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  color: white;
+}
+.enterprise-customer{
+  display: flex;
+  gap:10%;
+  color: white;
+}
+.enterprise-customer img{
+  width:52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
 

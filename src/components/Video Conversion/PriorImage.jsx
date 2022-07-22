@@ -10,7 +10,7 @@ import {
 const PriorImage = () => {
   return (
     <Box pt="20px">
-      <Stack direction="row" width="1200px" justifyContent="space-between">
+      <Stack direction="row"  width="1200px" justifyContent="space-between">
         <Stack
           width="250px"
           _hover={{ backgroundColor: "gray.300" }}

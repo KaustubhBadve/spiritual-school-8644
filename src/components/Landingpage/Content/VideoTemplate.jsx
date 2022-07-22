@@ -4,7 +4,7 @@ import LandingSampleTemplate from "../LandingPageVideoComponents/LandingSampleTe
 import "../Styles/Homepage.css";
 
 const VideoTemplate = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div className="video_container">
       <div className="video_d">
@@ -14,7 +14,8 @@ const VideoTemplate = () => {
       </div>
       <div className="video_converter">
         <div className="video-sub" onClick={onOpen}>
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/tb_tracer.png"
             }
@@ -22,12 +23,13 @@ const VideoTemplate = () => {
               "https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4"
             }
           />
-            <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+          <div className="exploreplay-div">
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
         <div className="video-sub">
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/tb_billow.png"
             }
@@ -36,11 +38,12 @@ const VideoTemplate = () => {
             }
           />
           <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
         <div className="video-sub">
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/tb_vertex.png"
             }
@@ -49,11 +52,12 @@ const VideoTemplate = () => {
             }
           />
           <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
         <div className="video-sub">
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/tb_circuit.png"
             }
@@ -62,11 +66,12 @@ const VideoTemplate = () => {
             }
           />
           <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
         <div className="video-sub">
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/tb_vault2.png"
             }
@@ -75,11 +80,12 @@ const VideoTemplate = () => {
             }
           />
           <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
         <div className="video-sub">
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/tb_notice.png"
             }
@@ -88,11 +94,12 @@ const VideoTemplate = () => {
             }
           />
           <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
         <div className="video-sub">
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/flux_tn.png"
             }
@@ -101,11 +108,12 @@ const VideoTemplate = () => {
             }
           />
           <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
         <div className="video-sub">
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/unity_tn.png"
             }
@@ -114,11 +122,12 @@ const VideoTemplate = () => {
             }
           />
           <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
         <div className="video-sub">
-          <LandingSampleTemplate className="video-sub"
+          <LandingSampleTemplate
+            className="video-sub"
             imgp={
               "https://storage.googleapis.com/lumen5-site-images/looper_tn.png"
             }
@@ -127,8 +136,8 @@ const VideoTemplate = () => {
             }
           />
           <div className="exploreplay-div">
-              <i className="fa fa-play explore-play" aria-hidden="true"></i>
-            </div>
+            <i className="fa fa-play explore-play" aria-hidden="true"></i>
+          </div>
         </div>
       </div>
     </div>

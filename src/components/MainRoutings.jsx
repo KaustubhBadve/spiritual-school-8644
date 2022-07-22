@@ -10,6 +10,7 @@ import CombineAllUserDas from "./user Dashboard/CombineAllUserDas";
 import Otp from "./Payment/Otp";
 import Confirmation from "./Payment/Confirmation";
 import Payment from "./Payment/Payment";
+import EnterpriseContent from "./Enterprise/EnterpriseContent";
 
 const MainRoutings = () => {
   return (
@@ -20,7 +21,7 @@ const MainRoutings = () => {
       <Route path="/otpcheck" element={<Otp />} />
       <Route path="/confirmation" element={<Confirmation/>} />
 
-      {/* <Route path="/enterprise" element={} /> */}
+      <Route path="/enterprise" element={<EnterpriseContent/>} />
       {/* TODO  req auth */}
       <Route path="/auth/login" element={<Login />} />
       <Route path="/auth/signup" element={<Signup />} />

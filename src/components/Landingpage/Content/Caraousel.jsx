@@ -14,9 +14,7 @@ const Caraousel = () => {
         </p>
       </div>
       <div className="carousel-div">
-        <Carousel
-          indicators={false}
-        >
+        <Carousel indicators={false}>
           <Carousel.Item className="carousel-div">
             <img
               className="d-block w-100 h-100"
@@ -48,7 +46,7 @@ const Caraousel = () => {
                 <div className="carasouel-hr">
                   <div></div>
                   <div>
-                    <Link to="/case-studies/dnvgl" className="carasouel-link">
+                    <Link to="#" className="carasouel-link">
                       Read story →
                     </Link>
                   </div>
@@ -88,7 +86,7 @@ const Caraousel = () => {
                 <div className="carasouel-hr">
                   <div></div>
                   <div>
-                    <Link to="/case-studies/dnvgl" className="carasouel-link">
+                    <Link to="#" className="carasouel-link">
                       Read story →
                     </Link>
                   </div>
@@ -128,7 +126,7 @@ const Caraousel = () => {
                 <div className="carasouel-hr">
                   <div></div>
                   <div>
-                    <Link to="/case-studies/dnvgl" className="carasouel-link">
+                    <Link to="#" className="carasouel-link">
                       Read story →
                     </Link>
                   </div>
@@ -168,7 +166,7 @@ const Caraousel = () => {
                 <div className="carasouel-hr">
                   <div></div>
                   <div>
-                    <Link to="/case-studies/dnvgl" className="carasouel-link">
+                    <Link to="#" className="carasouel-link">
                       Read story →
                     </Link>
                   </div>
@@ -208,7 +206,7 @@ const Caraousel = () => {
                 <div className="carasouel-hr">
                   <div></div>
                   <div>
-                    <Link to="/case-studies/dnvgl" className="carasouel-link">
+                    <Link to="#" className="carasouel-link">
                       Read story →
                     </Link>
                   </div>
@@ -248,7 +246,7 @@ const Caraousel = () => {
                 <div className="carasouel-hr">
                   <div></div>
                   <div>
-                    <Link to="/case-studies/dnvgl" className="carasouel-link">
+                    <Link to="#" className="carasouel-link">
                       Read story →
                     </Link>
                   </div>
@@ -289,7 +287,7 @@ const Caraousel = () => {
                 <div className="carasouel-hr">
                   <div></div>
                   <div>
-                    <Link to="/case-studies/dnvgl" className="carasouel-link">
+                    <Link to="#" className="carasouel-link">
                       Read story →
                     </Link>
                   </div>

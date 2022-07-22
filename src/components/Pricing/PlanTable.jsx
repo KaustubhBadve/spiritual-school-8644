@@ -31,8 +31,9 @@ const PlanTable = () => {
                 >
                   Community
                 </Text>
+                <Box justifyContent={"center"} margin={"auto"} >
                 <Text
-                  fontSize="15px"
+                  fontSize="14px"
                   textTransform={"none"}
                   color={"gray.500"}
                   fontWeight={"400"}
@@ -40,6 +41,7 @@ const PlanTable = () => {
                 >
                   forever free
                 </Text>
+                </Box>
                 <BtnComponent
                   label={isAuth ? "Current Plan" : "Get Started"}
                   btnsize={"50px"}
@@ -56,8 +58,9 @@ const PlanTable = () => {
                 >
                   Starter
                 </Text>
+                <Box justifyContent={"center"} margin={"auto"} >
                 <Text
-                  fontSize="15px"
+                  fontSize="14px"
                   textTransform={"none"}
                   color={"gray.500"}
                   fontWeight={"400"}
@@ -65,6 +68,7 @@ const PlanTable = () => {
                 >
                   $79USD/month
                 </Text>
+                </Box>
                 <BtnComponent label={isAuth ? "Upgrade" : "Get Started"} />
               </Box>
             </Th>
@@ -78,8 +82,9 @@ const PlanTable = () => {
                 >
                   Professional
                 </Text>
+                <Box justifyContent={"center"} margin={"auto"} >
                 <Text
-                  fontSize="15px"
+                  fontSize="14px"
                   textTransform={"none"}
                   color={"gray.500"}
                   fontWeight={"400"}
@@ -87,6 +92,7 @@ const PlanTable = () => {
                 >
                   $199 USD/month
                 </Text>
+                </Box>
                 <BtnComponent
                   label={isAuth ? "Upgrade" : "Get Started"}
                   status={"active"}
@@ -103,8 +109,9 @@ const PlanTable = () => {
                 >
                   Enterprise
                 </Text>
+                <Box justifyContent={"center"} margin={"auto"} >
                 <Text
-                  fontSize="15px"
+                  fontSize="14px"
                   textTransform={"none"}
                   color={"gray.500"}
                   fontWeight={"400"}
@@ -112,6 +119,7 @@ const PlanTable = () => {
                 >
                   Let's talk!
                 </Text>
+                </Box>
                 <BtnComponent label={"Learn More"} />
               </Box>
             </Th>

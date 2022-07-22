@@ -23,9 +23,9 @@ const ImportUrl = ({ setimagePrior }) => {
   };
 
   return (
-    <Box width="400px" border="1px solid #dddee6" borderLeft="none">
+    <Box width="490px" border="1px solid #dddee6" borderLeft="none">
       <Box borderBottom="1px solid #dddee6" height="75px">
-        <Stack pt="20px" direction="row" alignItems="center">
+        <Stack pt="20px" mr="20px" direction="row" alignItems="center">
           <span style={{ fontSize: "18px" }}>
             <i className="fa-solid fa-file-circle-plus"></i>
           </span>
@@ -35,21 +35,22 @@ const ImportUrl = ({ setimagePrior }) => {
             placeholder="Paste a URL to your blog/article"
             variant="flushed"
           />
-          <Button
-            _hover={{ color: "black", backgroundColor: "#5846f6" }}
-            backgroundColor="#5846f6"
-            fontSize="14px"
-            color="white"
-            borderRadius="30px"
-            border="1px solid #5b4af6"
-            width="80px"
-            pr="8px"
-            onClick={HandleInport}
-            pl="8px"
-            disabled={inpValue.length==0}
-          >
-            IMPORT
-          </Button>
+            <Button
+              _hover={{ color: "white", backgroundColor: "#1606ad" }}
+              backgroundColor="#5846f6"
+              fontSize="13px"
+              fontWeight="550"
+              color="white"
+              borderRadius="30px"
+              border="1px solid #5b4af6"
+              width="80px"
+              pr="8px"
+              onClick={HandleInport}
+              pl="8px"
+              disabled={inpValue.length==0}
+            >
+              IMPORT
+            </Button>
         </Stack>
 
         {boxChange ? <FilledboxCombine /> : <EmptyBox />}
@@ -59,8 +60,9 @@ const ImportUrl = ({ setimagePrior }) => {
             border="1px solid #dddee6"
             fontSize="14px"
             pt="6px"
+            pl="20px"
             color="gray"
-            width="70%"
+            width="65%"
             height="40px"
           >
             Use A.I to generate a summary{" "}
@@ -70,7 +72,7 @@ const ImportUrl = ({ setimagePrior }) => {
           </Box>
           <Button
             onClick={() => setimagePrior(true)}
-            _hover={{ color: "black", backgroundColor: "#5846f6" }}
+            _hover={{ color: "white", backgroundColor: "#1606ad" }}
             backgroundColor="#5846f6"
             fontSize="14px"
             color="white"
@@ -80,6 +82,7 @@ const ImportUrl = ({ setimagePrior }) => {
             width="120px"
             pr="10px"
             pl="8px"
+            pt="10px"
           >
             Convert to video
           </Button>

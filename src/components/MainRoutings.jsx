@@ -10,15 +10,16 @@ import CombineAllUserDas from "./user Dashboard/CombineAllUserDas";
 import Otp from "./Payment/Otp";
 import Confirmation from "./Payment/Confirmation";
 import Payment from "./Payment/Payment";
+import { Text } from "@chakra-ui/react";
 
 const MainRoutings = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/pricing" element={<CompletePricing />} />
-      <Route path='/payment' element={<Payment/>} />
+      <Route path="/payment" element={<Payment />} />
       <Route path="/otpcheck" element={<Otp />} />
-      <Route path="/confirmation" element={<Confirmation/>} />
+      <Route path="/confirmation" element={<Confirmation />} />
 
       {/* <Route path="/enterprise" element={} /> */}
       {/* TODO  req auth */}
@@ -31,6 +32,10 @@ const MainRoutings = () => {
         element={<VideoConversionCombine />}
       />
       {/* <Route path="/finalvideoconversion" element ={<FinalVideoConversion/>} /> */}
+      <Route
+        path="*"
+        element={<Text fontSize={"100px"}>Page not found!..</Text>}
+      />
     </Routes>
   );
 };

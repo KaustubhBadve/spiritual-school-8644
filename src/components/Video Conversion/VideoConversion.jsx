@@ -13,7 +13,7 @@ const VideoConversion = () => {
 
   return (
     <Box height="85vh">
-    <NavbarBlogConversion/>
+    <NavbarBlogConversion imagePrior={imagePrior}/>
     <Stack direction="row"> 
     <SieBar/>
     <ImportUrl setimagePrior={setimagePrior}/>

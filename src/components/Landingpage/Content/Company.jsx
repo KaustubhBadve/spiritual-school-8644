@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
 const Company = () => {
@@ -9,7 +9,7 @@ const Company = () => {
           Over 6 million videos created by thousands of businesses
         </Text>
       </Box>
-      <Flex gap={10} marginLeft="17%" marginBottom="2%">
+      <Flex gap={10} marginLeft="17%" marginBottom="2%" wrap="wrap" align="center">
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-salesforce-color.png" />
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-pwc-color.png" />
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-siemens-color1.png" />

@@ -9,6 +9,7 @@ import VideoImage from "./Content/VideoImage";
 import VideoTemplate from "./Content/VideoTemplate";
 import FooterLandingPage from "./FooterLandingPage/FooterLandingPage";
 import NavbarLandingPage from "./Navbar/NavbarLandingPage";
+import "../Landingpage/Styles/Homepage.css"
 
 const LandingPage = () => {
   return (

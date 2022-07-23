@@ -8,8 +8,8 @@ const LandingPausedOverlay = ({ imgp }) => (
       className={css`
         /* Thumbnail image expands to cover the player */
         position: absolute;
-        height: 200px;
-        width: 350px;
+        height: 100%;
+        width: 100%;
         top: 0;
         left: 0;
         object-fit: cover;

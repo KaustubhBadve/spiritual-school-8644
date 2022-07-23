@@ -60,8 +60,8 @@
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
+  /* margin-right: 1rem;
+  font-size: 1.25rem; */
   line-height: inherit;
   white-space: nowrap;
 }
@@ -313,7 +313,7 @@ a.label {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   text-transform: none;
   font-weight: 400;
   -webkit-appearance: none;
@@ -1038,4 +1038,124 @@ a.label {
   margin: auto;
   margin-top: 2rem;
   padding: 2rem;
+}
+
+/* 
+media Queries for homepage */
+@media (min-width: 820px) and (max-width: 1180px) {
+  .navbar {
+    width: 820px;
+    height: 120px;
+    /* padding:0px 48px;  */
+  }
+  .content_container {
+    width: 820px !important;
+    height: 900px !important;
+    padding: 4rem 2rem !important;
+    margin: 0px 0px 32px !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }
+  .content_container > div:first-child {
+    width: 360px !important;
+    height: 742px !important;
+    padding: 0px 0px 0px 48px !important;
+    margin: 48px 0px 48px 48px !important;
+  }
+  .company-p {
+    width: 820px;
+  }
+.carousel-div{
+  width: 690px !important;
+  height: 420px !important;
+}
+.carasouel-d{
+  width:420px !important;
+  height: 352px !important;
+  padding: 16px !important;
+  margin: 16px !important;
+}
+.carasouel-company{
+  width:564px !important;
+  height: 25px !important;
+  margin: 16px 48px !important;
+  padding: 0px 48px !important;
+  margin-top: 40px !important;
+}
+.carasouel-company img{
+  width:54px !important;
+  height: 29px !important;
+  margin: 0px 16px !important;
+}
+.carasouel-para{
+  width: 356px !important;
+  height: auto !important;
+}
+.tips-box{
+  width: 720px !important;
+  height: 434px !important;
+}
+.tips-box>div{
+  width:170px !important
+}
+.tips-footer {
+  margin-top: 6rem;
+}
+.footer_container{
+  display: block;
+}
+.explore-head{
+  height:75px !important
+}
+.explore-btn{
+  width:700px !important
+}
+.explore-btn>button{
+  font-size: 14px !important;
+}
+.video_converter>div{
+  width:210px !important;
+  height: 120px !important;
+  border-radius: 20px !important;
+}
+.exploreplay-div{
+  width: 48px !important;
+  height: 48px !important;
+  margin: -8px 0px 0px -10px !important;
+  /* margin: 0px 0px 0px -36px !important; */
+}
+.explore-template{
+  width: 720px !important;
+  height: 320px !important;
+}
+.explore-template>div{
+  width: 210px !important;
+  height: 120px !important;
+}
+.explore-template > div:hover .explore-play,
+.explore-template > div:hover .exploreplay-div,
+.video-sub:hover > .exploreplay-div {
+  display: none !important;
+}
+.company-p{
+  width: 820px !important;
+}
+ 
+}
+@media (min-width: 400px) and (max-width: 720px) {
+  .navbar {
+    width: 376px !important;
+    height: 100px !important;
+    /* padding:0px 48px;  */
+  }
+  .content_container{
+    width:420px !important;
+    display: block !important;
+    height: 1000px !important;
+  }
+  .content_span{
+    font-size: 10px !important;
+  }
+  
+ 
 }

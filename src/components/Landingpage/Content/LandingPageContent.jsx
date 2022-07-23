@@ -39,6 +39,7 @@ const LandingPageContent = () => {
             src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-hero.png"
             alt="video-logo"
             style={{ width: "510px", height: "480px" }}
+            className="media"
           />
           <div className="icon-circle" onClick={onOpen}>
             <i

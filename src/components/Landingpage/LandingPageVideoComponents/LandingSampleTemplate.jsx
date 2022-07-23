@@ -34,8 +34,8 @@ const LandingSampleTemplate = ({ imgp, video }) => {
     <Box
       onMouseOver={over}
       onMouseOut={out}
-      width="350px"
-      height="200px"
+      width="100%"
+      height="100%"
       borderRadius="20px"
       // border="1px solid #dddde6"
       // className="video-sub"

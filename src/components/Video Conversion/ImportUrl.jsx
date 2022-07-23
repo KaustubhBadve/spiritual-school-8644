@@ -81,8 +81,8 @@ const ImportUrl = ({ setimagePrior }) => {
             disabled={boxChange === false}
             width="120px"
             pr="10px"
-            pl="8px"
-            pt="10px"
+            pl="10px"
+            pt="4px"
           >
             Convert to video
           </Button>

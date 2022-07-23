@@ -12,6 +12,7 @@ import Confirmation from "./Payment/Confirmation";
 import Payment from "./Payment/Payment";
 import SignUp from "./Login&Signup/SignUp";
 import EnterpriseContent from "./Enterprise/EnterpriseContent";
+import FinalVideoDownload from "./Video Conversion/FinalVideoDownload";
 
 const MainRoutings = () => {
   return (
@@ -31,7 +32,7 @@ const MainRoutings = () => {
         path="/blogtoVideoConversion"
         element={<VideoConversionCombine />}
       />
-      {/* <Route path="/finalvideoconversion" element ={<FinalVideoConversion/>} /> */}
+      <Route path="/finalvideoconversion" element ={<FinalVideoDownload/>} />
     </Routes>
   );
 };

@@ -1,8 +1,11 @@
 import React from "react";
 import { Box, Image, Button, Stack, Input } from "@chakra-ui/react";
 import { BellIcon } from "@chakra-ui/icons";
+import {useNavigate} from 'react-router-dom'
+
 
 const NavbarTempSelc = () => {
+  const navigate=useNavigate()
   return (
     <Box
       display="flex"
@@ -18,6 +21,8 @@ const NavbarTempSelc = () => {
       >
         <Image
           width="150px"
+          onClick={()=>navigate("/selectTemplate")}
+          cursor="pointer"
           src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-color-default.svg"
         />
       </Stack>

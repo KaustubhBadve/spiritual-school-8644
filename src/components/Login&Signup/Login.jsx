@@ -17,6 +17,9 @@ import { LOGIN_SUCCESS } from '../../Redux/ActionType';
    
    
     const HandleLogin=()=>{
+
+      if(username && password){
+        localStorage.setItem("email",username)
       var obj1={
         username,
         password
@@ -26,6 +29,7 @@ import { LOGIN_SUCCESS } from '../../Redux/ActionType';
         navigate("/dashboard")
       })
     }
+    }
 
         return (
           <>
@@ -33,7 +37,7 @@ import { LOGIN_SUCCESS } from '../../Redux/ActionType';
              <div className='first_image'>
                 <div className={styles.sidenav}>
               <div style={{ height: "125px" }}>
-                 <img src={LoginSignup} alt="" />
+                 <img onClick={()=> navigate("/")} src={LoginSignup} alt="" />
               </div>
               <div className={styles.sidenavGrid}>
               </div>
@@ -71,16 +75,16 @@ import { LOGIN_SUCCESS } from '../../Redux/ActionType';
                 </div>
                  <div style={{display:"flex"}}>
                   <button className={styles.button2}>
-                 <div><p>Sign up with Facebook</p></div></button>
+                 Sign up with Facebook</button>
                 </div>
                  <div style={{display:"flex"}}>
                   <button className={styles.button2}>
-                 <div><p>Log in via with SSo</p></div></button>
+                 Log in via with SSo</button>
                 </div>
               </div> 
       
               <div className={styles.bottomLines}>
-                Need a Lumen5 account? <Link to="/login">Create an account</Link>
+                Need a Lumen5 account? <Link to="/auth/signup">Create an account</Link>
               </div>
       
               <div className={styles.conclusionLine}>

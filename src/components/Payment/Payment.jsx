@@ -1,4 +1,3 @@
-import { CheckIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -24,6 +23,7 @@ const Payment = () => {
     e.preventDefault();
     navigate("/otpcheck");
   };
+  let email = localStorage.getItem("email");
   return (
     <Container maxW={"60%"} h={"auto"}>
       <HStack
@@ -162,7 +162,13 @@ const Payment = () => {
               </Text>
               <InputGroup>
                 <InputLeftAddon children="Email" />
-                <Input type="email" placeholder="" required />
+                {/* placeholder and value of login email  TODO*/}
+                <Input
+                  type="email"
+                  defaultValue={email}
+                  placeholder=""
+                  required
+                />
               </InputGroup>
             </Box>
             <Box>
@@ -181,6 +187,7 @@ const Payment = () => {
                     borderBottomRightRadius={"0px"}
                     placeholder="1234 1234 1234 1234"
                     required
+                    maxLength={16}
                   />
 
                   <InputRightElement
@@ -212,6 +219,7 @@ const Payment = () => {
                     }
                   />
                 </InputGroup>
+
                 <HStack spacing={"0px"}>
                   <Input
                     borderTop={"none"}
@@ -220,6 +228,7 @@ const Payment = () => {
                     borderBottomRightRadius={"0px"}
                     placeholder="MM / YY"
                     required
+                    maxLength={5}
                   />
                   <Input
                     borderTop={"none"}
@@ -228,6 +237,7 @@ const Payment = () => {
                     borderBottomLeftRadius={"0px"}
                     placeholder="CVC"
                     required
+                    maxLength={3}
                   />
                 </HStack>
               </Box>

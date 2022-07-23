@@ -21,13 +21,13 @@ export  function AllvideosCard() {
         border={"1px solid #dddee6"}
         rounded={"md"}
         overflow={"hidden"}
-        width={"400px"}
-        height={"400px"}
+        width={"300px"}
+        height={"300px"}
         fontSize="30px"
       >
         <Stack
           textAlign={"center"}
-          p={6}
+          p={0}
           color={useColorModeValue("gray.800", "white")}
           align={"center"}
         >
@@ -35,29 +35,29 @@ export  function AllvideosCard() {
             fontSize={"sm"}
             fontWeight={500}
             bg={useColorModeValue("green.50", "green.900")}
-            p={2}
-            px={3}
+            p={1}
+            px={2}
             color={"green.500"}
             rounded={"full"}
           >
             Hobby
           </Text>
           <Stack direction={"row"} align={"center"} justify={"center"}>
-            <img src="https://storage.googleapis.com/lumen5-site-images/Prev_Origin_v1b.png" alt="" />
+            <img width="300px"  src="https://storage.googleapis.com/lumen5-site-images/Prev_Origin_v1b.png" alt="" />
           </Stack>
         </Stack>
 
-        <Box bg={useColorModeValue("gray.50", "gray.900")} px={6} py={10}>
-          <List spacing={3}>
-            <ListItem>
-              <ListIcon as={CheckIcon} color="green.400" />
+        <Box bg={useColorModeValue("gray.50", "gray.900")} px={6} py={1}>
+          <List spacing={1}>
+            <ListItem fontSize="19px">
+              <ListIcon  as={CheckIcon} color="green.400" />
               Untitled Videos
             </ListItem>
-            <ListItem>
+            <ListItem fontSize="19px">
               <ListIcon as={CheckIcon} color="green.400" />
               Create Good Videos
             </ListItem>
-            <ListItem>
+            <ListItem fontSize="19px">
               <ListIcon as={CheckIcon} color="green.400" />
               50 identified users
             </ListItem>

@@ -61,7 +61,7 @@ const TipsTricks = () => {
           </div>
         </div>
       </div>
-      <div className="pricing">
+      <div className="pricing dd" style={{margin:"auto",marginLeft:"260px"}}>
         <img src={pricing} alt="" />
       </div>
     </div>

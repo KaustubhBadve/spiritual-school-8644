@@ -16,7 +16,7 @@ const BlogPost = () => {
           }}
         />
       </div>
-      <div>
+      <div className="NN">
         <div className="fontawesome">
           <i
             className="fa fa-file-text-o"

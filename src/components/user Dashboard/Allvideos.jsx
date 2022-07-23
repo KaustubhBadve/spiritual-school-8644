@@ -14,7 +14,7 @@ const Allvideos = () => {
   const navigate=useNavigate()
   return (
     <div>
-      <Heading textAlign="left" margin="20px">
+      <Heading fontSize="32px" fontWeight="500" textAlign="left" margin="20px">
         All Videos
       </Heading>
 
@@ -32,8 +32,8 @@ const Allvideos = () => {
             border={"1px solid #dddee6"}
             rounded={"md"}
             overflow={"hidden"}
-            width={"400px"}
-            height={"400px"}
+            width={"300px"}
+            height={"300px"}
             backgroundColor={"rgb(88,70,246)"}
           >
             <Text

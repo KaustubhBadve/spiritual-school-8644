@@ -52,7 +52,7 @@
   border-bottom: 1px solid lightgray;
   width: 100%;
   height: 30px;
-  font-size: 15px;
+  font-size: 18px;
   color: gray;
   margin-bottom: 13px;
   padding-bottom: 8px;
@@ -80,7 +80,7 @@
 .passwordDivision {
   display: flex;
   justify-content: space-between;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .passwordEye {

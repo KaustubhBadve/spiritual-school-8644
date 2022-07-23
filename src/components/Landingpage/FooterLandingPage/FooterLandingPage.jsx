@@ -8,22 +8,22 @@ const FooterLandingPage = () => {
       <div className="footer_container" style={{ marginTop: "31rem" }}>
         <div>
           <div>
-            <img
+            <img className="imgff"
               src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png"
               alt="footer_logo"
               style={{ width: "7.5rem", height: "2rem" }}
             />
           </div>
           <div>
-            <p className="footer_para">
+            <p className="footer_para ">
               Lumen5 combines powerful A.I. with a simple drag-and-drop
               interface to help you create professional video content in
               minutes.
             </p>
           </div>
         </div>
-        <div>
-          <div>
+        <div className="KK">
+          <div >
             <span className="footer_span">EXPLORE</span>
             <ul className="footer_links">
               <li>About</li>
@@ -34,7 +34,7 @@ const FooterLandingPage = () => {
               <li>Product Updates</li>
             </ul>
           </div>
-          <div>
+          <div className="XX">
             <span className="footer_span">VIDEO TOOLS</span>
             <ul className="footer_links">
               <li>Add Text to Video</li>
@@ -45,7 +45,7 @@ const FooterLandingPage = () => {
               <li>See all</li>
             </ul>
           </div>
-          <div>
+          <div className="XX">
             <span className="footer_span">VIDEO CREATORS</span>
             <ul className="footer_links">
               <li>Video Editor</li>

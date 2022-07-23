@@ -3,7 +3,7 @@ import React from 'react'
 
 const Brandkits = () => {
   return (
-    <div>
+    <div style={{paddingLeft:"30px",paddingTop:"20px"}}>
       <Text fontSize="40px" textAlign="left">
         Brand Kits
       </Text>

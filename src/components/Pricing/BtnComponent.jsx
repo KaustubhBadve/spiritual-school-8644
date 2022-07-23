@@ -18,6 +18,10 @@ const BtnComponent = ({ label, sizeGiven, status }) => {
     } else if (!isAuth) {
       navigate("/auth/signup");
     }
+    else if(label==="Compare Plan")
+    {
+      navigate("/pricing")
+    }
   };
   return (
     <Button

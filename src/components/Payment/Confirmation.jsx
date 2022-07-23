@@ -7,7 +7,7 @@ const Confirmation = () => {
   const navigate = useNavigate();
 
   const HandleStart = () => {
-    navigate("/dashboard");
+    navigate("/");
   };
   return (
     <>
@@ -21,11 +21,11 @@ const Confirmation = () => {
             </div>
             <div className={style.confirmation7}>
               <img
-                src="https://lumen5.com/learn/wp-content/uploads/2022/07/Blog-Thumbnail-Yellow-Turqoise-390x260.png"
+                src="https://lumen5.com/learn/wp-content/uploads/2022/06/Blog-Thumbnail-Overlay-1-600x500.png"
                 alt="image to be enter"
               />
             </div>
-            <button style={{width:"80%"}} onClick={() => HandleStart()} className={style.checkbtn33}>
+            <button style={{width:"90%",marginLeft:"220px"}} onClick={() => HandleStart()} className={style.checkbtn33}>
               Lets Start
             </button>
             <div className={style.confirmation3}>

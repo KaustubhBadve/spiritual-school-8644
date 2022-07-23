@@ -1,6 +1,6 @@
 import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import React from "react";
-
+import "../Styles/Homepage.css";
 const Company = () => {
   return (
     <div className="company-p">
@@ -9,7 +9,11 @@ const Company = () => {
           Over 6 million videos created by thousands of businesses
         </Text>
       </Box>
+<<<<<<< HEAD
       <Flex gap={10} marginLeft="17%" marginBottom="2%" wrap="wrap" align="center">
+=======
+      <Flex className="compony" gap={10} marginLeft="17%" marginBottom="2%">
+>>>>>>> bb54731d7f01306958354817ca84bfbef7ed3801
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-salesforce-color.png" />
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-pwc-color.png" />
         <Image src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-siemens-color1.png" />

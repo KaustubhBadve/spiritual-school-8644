@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import "./Homepage.css";
+import "./Homepage.css";
 
 const EnterpriseNavbar = () => {
   const [create, setCreate] = useState(false);
@@ -34,7 +34,7 @@ const EnterpriseNavbar = () => {
     <div>
       <nav
         className="navbar navbar-expand-lg fixed-top navbar-light header-container px-md-5"
-        style={{ backgroundColor: "#24282f" }}
+        style={{ backgroundColor: "#24282f",height:"80px",paddingTop:"-20px"}}
       >
         <div className="d-flex pl-md-4 ml-md-5">
           <Link to="/" className="navbar-brand d-flex align-items-center">

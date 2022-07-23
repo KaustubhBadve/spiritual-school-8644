@@ -18,19 +18,17 @@ import styles from "./Pricing.module.css";
 import FrequentQues from "./FrequentQues";
 import pricingImg from "./pricing.png";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Pricing = () => {
   const [billMonthly, setBillMonthly] = useState(true);
   const [billYearly, setBillYearly] = useState(false);
-  const isAuth = true;
+  const isAuth = useSelector((state) => state.isAuth);
   const navigate = useNavigate();
 
   const handleSignUp = () => {
-    if (isAuth) {
-      navigate("/dashboard");
-    }
-    //if is auth true go to dashboard
-    // else go to signup
+    if (isAuth) navigate("/dashboard");
+    else navigate("/auth/signup");
   };
   const handleBillMonthly = () => {
     setBillMonthly(true);
@@ -40,6 +38,7 @@ const Pricing = () => {
     setBillMonthly(false);
     setBillYearly(true);
   };
+  
   return (
     <Box align="center" justify="center" mt={"150px"}>
       <Box maxW={"100%"}>
@@ -71,7 +70,7 @@ const Pricing = () => {
             fontSize={"calc(1.35625rem + 1.275vw)"}
             fontWeight="650"
             lineHeight={"50px"}
-            letterSpacing="2px"
+            letterSpacing="0.1px"
           >
             Plans for your video content creation strategy
           </Text>
@@ -127,14 +126,14 @@ const Pricing = () => {
         mt="30px"
         margin={"auto"}
         gap={"5px"}
-        w={"80%"}
+        w={"95%"}
         h={"600px"}
       >
         <Box h={"100%"} w={"14%"}>
           <PricingCard
             sizeGiven={"100%"}
             title="Community"
-            description="For casual and video enthusiasts"
+            description="For casual creators and video enthusiasts"
             cost="$0"
             costDescription="forever free"
             btnLabel={isAuth ? "Current Plan" : "Get Started"}
@@ -259,7 +258,7 @@ const Pricing = () => {
           <Text
             fontSize="25px"
             textAlign={"center"}
-            fontWeight={"400"}
+            fontWeight={"500"}
             mt={"80px"}
             mb={"10px"}
           >
@@ -272,7 +271,7 @@ const Pricing = () => {
         <Image
           ml={"370px"}
           mt={"120px"}
-          mb={"80px"}
+          mb={"-410px"}
           src={pricingImg}
           onClick={handleSignUp}
         />

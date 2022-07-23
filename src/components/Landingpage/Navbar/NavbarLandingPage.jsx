@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Homepage.css";
 
 const NavbarLandingPage = () => {
   const [create, setCreate] = useState(false);
   const [learn, setLearn] = useState(false);
-
+  
   const handleDropdown = () => {
     setCreate(!create);
     setLearn(false);
@@ -15,6 +15,14 @@ const NavbarLandingPage = () => {
     setLearn(!learn);
     setCreate(false);
   };
+  let username
+  // useEffect(() => {
+       
+   username=localStorage.getItem("name")
+    
+  // }, [username])
+  console.log("username",username)
+  
   return (
     <div style={{ transition: "0.4s" }}>
       <nav
@@ -31,6 +39,7 @@ const NavbarLandingPage = () => {
           </Link>
         </div>
         <button
+        onClick={handleDropdown}
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -125,6 +134,9 @@ const NavbarLandingPage = () => {
                         </Link>
                       </div>
                     )}
+
+
+                
                   </li>
 
                   <li className="nav-item mr-md-2">
@@ -188,7 +200,7 @@ const NavbarLandingPage = () => {
                       type="button"
                       className="lumen5-button2"
                     >
-                      <span>Login</span>
+                      <span>{username ? username : "Login"}</span>
                     </Link>
                   </li>
                   <li className="nav-item mb-2">

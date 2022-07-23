@@ -5,7 +5,7 @@ import SampleTemplatesLayout from '../Template Selection/VideoComponents/SampleT
 
 const InstantVideos = () => {
   return (
-    <div>
+    <div style={{paddingLeft:"30px",paddingTop:"20px"}}>
 
        <Text fontSize="40px" textAlign="left">
         Instant Videos

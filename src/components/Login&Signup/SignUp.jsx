@@ -19,7 +19,7 @@ export default function SignUp() {
   const navigate = useNavigate()
   const otp = useRef();
   const handleSignUp = () => {
-
+localStorage.setItem("name",email)
     let obj = {
       username: name,
       email: email,
@@ -42,7 +42,7 @@ export default function SignUp() {
         <div className='first_image'>
           <div className={styles.sidenav}>
             <div style={{ height: "125px" }}>
-              <img src={LoginSignup} alt="" />
+              <img onClick={()=> navigate("/")}  src={LoginSignup} alt="" />
             </div>
             <div className={styles.sidenavGrid}>
             </div>
@@ -104,12 +104,12 @@ export default function SignUp() {
               <div style={{ display: "flex" }}>
                 <button className={styles.button2}>
                   {/* <div><img style={{marginLeft:"200px"}}src="https://www.svgrepo.com/show/158427/facebook.svg" alt="facebook" /></div> */}
-                  <div><p>Sign up with Facebook</p></div></button>
+                  Sign up with Facebook</button>
               </div>
             </div>
 
             <div className={styles.bottomLines}>
-              Already have a Lumen5 account? <a href="/login">Log in</a>
+              Already have a Lumen5 account? <a href="/auth/login">Log in</a>
             </div>
 
             <div className={styles.conclusionLine}>

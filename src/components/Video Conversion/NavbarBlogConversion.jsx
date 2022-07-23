@@ -28,11 +28,23 @@ import {
 } from "@chakra-ui/react";
 import final from "./Images/final.mp4";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {Link} from 'react-router-dom'
+import { logout } from "../../Redux/Action";
 
 const NavbarBlogConversion = ({imagePrior}) => {
+  const [logoutbox, setlogoutbox] = useState(false)
   const [spinner, setspinner] = useState(false)
   const navigate = useNavigate();
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  let username=localStorage.getItem("name")
+
+  const dispatch=useDispatch()
+  const HandleLogout=()=>{
+    navigate("/")
+    dispatch(logout())
+  }
 
   const HandlePublish=()=>{
     setspinner(true)
@@ -42,6 +54,7 @@ const NavbarBlogConversion = ({imagePrior}) => {
     }, 4000);
   }
   return (
+    <Box>
     <Box
       display="flex"
       justifyContent="space-between"
@@ -68,6 +81,7 @@ const NavbarBlogConversion = ({imagePrior}) => {
           _hover={{ color: "white", bg: "#5b4af6" }}
           border="1px solid #5b4af6"
           color="#5b4af6"
+          onClick={()=> navigate("/pricing")}
         >
           UPGRADE
         </Button>
@@ -122,8 +136,8 @@ const NavbarBlogConversion = ({imagePrior}) => {
         </Button>
         <DragHandleIcon />
         <BellIcon fontSize="25px" color="#5d6575" />
-        <Box textAlign="center" pt="3px" borderRadius="50%" width="30px" height="30px" bg="#dddee6">
-          K
+        <Box textAlign="center" pt="3px" borderRadius="50%"   onClick={()=>setlogoutbox(!logoutbox)} width="30px" height="30px" bg="#dddee6">
+         {username[0]}
         </Box>
       </Stack>
 
@@ -215,7 +229,22 @@ const NavbarBlogConversion = ({imagePrior}) => {
           </ModalContent>
         </Modal>
       </>
+
+ 
+
     </Box>
+
+{logoutbox && 
+  <div  className="dropdown-menu1" style={{position:"absolute",top:"8%" ,left:"89%",width:"200px",zIndex:"1"}}  aria-labelledby="learn-dropdown">
+ 
+  <Link className="dropdown-item1" to="#">
+   <Button onClick={HandleLogout}>Logout</Button>  
+  </Link>
+ </div>}
+ 
+     </Box>
+
+
   );
 };
 

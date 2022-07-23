@@ -19,11 +19,11 @@ const MainRoutings = () => {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/pricing" element={<CompletePricing />} />
-      <Route path='/payment' element={<Payment/>} />
+      <Route path='/payment' element={<Payment />} />
       <Route path="/otpcheck" element={<Otp />} />
-      <Route path="/confirmation" element={<Confirmation/>} />
+      <Route path="/confirmation" element={<Confirmation />} />
 
-      <Route path="/enterprise" element={<EnterpriseContent/>} />
+      <Route path="/enterprise" element={<EnterpriseContent />} />
       {/* TODO  req auth */}
       <Route path="/auth/login" element={<Login />} />
       <Route path="/auth/signup" element={<SignUp />} />
@@ -33,7 +33,7 @@ const MainRoutings = () => {
         path="/blogtoVideoConversion"
         element={<VideoConversionCombine />}
       />
-      <Route path="/finalvideoconversion" element ={<FinalVideoDownload/>} />
+      <Route path="/finalvideoconversion" element={<FinalVideoDownload />} />
     </Routes>
   );
 };

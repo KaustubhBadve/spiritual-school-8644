@@ -1,3 +1,4 @@
+import { CheckIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -9,6 +10,7 @@ import {
   Input,
   InputGroup,
   InputLeftAddon,
+  InputRightElement,
   Select,
   Text,
 } from "@chakra-ui/react";
@@ -160,7 +162,6 @@ const Payment = () => {
               </Text>
               <InputGroup>
                 <InputLeftAddon children="Email" />
-                {/* placeholder and value of login email  TODO*/}
                 <Input type="email" placeholder="" required />
               </InputGroup>
             </Box>
@@ -174,12 +175,43 @@ const Payment = () => {
                 Card Information
               </Text>
               <Box>
-                <Input
-                  borderBottomLeftRadius={"0px"}
-                  borderBottomRightRadius={"0px"}
-                  placeholder="1234 1234 1234 1234"
-                  required
-                />
+                <InputGroup>
+                  <Input
+                    borderBottomLeftRadius={"0px"}
+                    borderBottomRightRadius={"0px"}
+                    placeholder="1234 1234 1234 1234"
+                    required
+                  />
+
+                  <InputRightElement
+                    w={"120px"}
+                    gap={"3px"}
+                    children={
+                      <>
+                        <Image
+                          src={
+                            "https://js.stripe.com/v3/fingerprinted/img/visa-729c05c240c4bdb47b03ac81d9945bfe.svg"
+                          }
+                        />
+                        <Image
+                          src={
+                            "https://js.stripe.com/v3/fingerprinted/img/mastercard-4d8844094130711885b5e41b28c9848f.svg"
+                          }
+                        />
+                        <Image
+                          src={
+                            "https://js.stripe.com/v3/fingerprinted/img/amex-a49b82f46c5cd6a96a6e418a6ca1717c.svg"
+                          }
+                        />
+                        <Image
+                          src={
+                            "https://js.stripe.com/v3/fingerprinted/img/unionpay-8a10aefc7295216c338ba4e1224627a1.svg"
+                          }
+                        />
+                      </>
+                    }
+                  />
+                </InputGroup>
                 <HStack spacing={"0px"}>
                   <Input
                     borderTop={"none"}

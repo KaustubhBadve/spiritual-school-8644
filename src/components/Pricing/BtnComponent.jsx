@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Pricing.module.css";
 
 const BtnComponent = ({ label, sizeGiven, status }) => {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   const isAuth = useSelector((state) => state.isAuth);
 
   const handleBtnClick = () => {
@@ -16,7 +16,7 @@ const BtnComponent = ({ label, sizeGiven, status }) => {
     } else if (isAuth) {
       return navigate("/payment");
     } else if (!isAuth) {
-      navigate("/auth/signup");
+      return navigate("/auth/signup");
     }
   };
   return (

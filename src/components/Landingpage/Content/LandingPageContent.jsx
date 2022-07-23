@@ -29,7 +29,7 @@ const LandingPageContent = () => {
               to="/auth/signup/"
               type="button"
              
-              className="lumen5-button btn btn-rounded btn-primary btn-lg"
+              className="lumen5-button3 btn btn-rounded btn-primary btn-lg"
               id='AA'
             >
               <span >Sign up free</span>

@@ -8,8 +8,14 @@ import { Box, Button, Stack } from "@chakra-ui/react";
 import React from "react";
 import NavbarTempSelc from "../user Dashboard/UserDashNavbar";
 import final from "./Images/final.mp4";
+import {useNavigate} from "react-router-dom"
+
+
+
 
 const FinalVideoDownload = () => {
+  let username=localStorage.getItem("name")
+  const navigate=useNavigate()
   return (
     <Box>
       <NavbarTempSelc />
@@ -46,6 +52,7 @@ const FinalVideoDownload = () => {
               width="110px"
               pr="8px"
               pl="8px"
+              onClick={()=> navigate("/pricing")}
             >
               Upgrade
             </Button>
@@ -71,10 +78,10 @@ const FinalVideoDownload = () => {
                 textAlign="center"
                 backgroundColor="gray.400"
               >
-                K
+               {username[0]}
               </Box>
               <Stack pr="500px" pt="14px" lineHeight="15px">
-                <Box fontSize="18px">Kaustubh Badve</Box>
+                <Box fontSize="18px">{username}</Box>
                 <Box fontSize="15px">Published on Jul 24</Box>
               </Stack>
 
@@ -95,6 +102,7 @@ const FinalVideoDownload = () => {
                 >
                   Edit Video
                 </Button>
+                <a href={final} download>
                 <Button
                   _hover={{ color: "white", backgroundColor: "#1606ad" }}
                   backgroundColor="#5b4af6"
@@ -109,7 +117,7 @@ const FinalVideoDownload = () => {
                   pl="8px"
                 >
                   Download
-                </Button>
+                </Button></a> 
               </Box>
             </Stack>
           </Stack>

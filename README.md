@@ -24,7 +24,7 @@ These are the technologies used in this project which are available below:
 #### Chakra UI (UI Styling Library)
 #### For Frontend : HTML5, CSS3, Javascript, JS6, ReactJS
 #### For database: Local storage
-####For authentication: Masai Api Mocker
+#### For authentication: Masai Api Mocker
 
 # Functionalities we made:
 ## Landing Page :
@@ -50,7 +50,7 @@ Once you paste a link or upload any media the ‘convert to video ’ button wil
 
 Once it gets published user can preview and download that video.
 
-## Upgrade
+## Upgrade:
 If the user wants to avail of more features, the user can upgrade its subscription.
 
 After logged in , user is given a basic Community plan. There are 3 more plans: Starter, Professional, and Enterprise.

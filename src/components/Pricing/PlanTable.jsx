@@ -13,8 +13,11 @@ import {
 import BtnComponent from "./BtnComponent";
 import { CheckIcon } from "@chakra-ui/icons";
 import styles from "./Pricing.module.css";
+import { useSelector } from "react-redux";
+
 const PlanTable = () => {
-  const isAuth = true;
+  const isAuth = useSelector((state) => state.isAuth);
+
   return (
     <TableContainer>
       <Table justifyContent={"center"} margin={"auto"}>
@@ -31,16 +34,16 @@ const PlanTable = () => {
                 >
                   Community
                 </Text>
-                <Box justifyContent={"center"} margin={"auto"} >
-                <Text
-                  fontSize="14px"
-                  textTransform={"none"}
-                  color={"gray.500"}
-                  fontWeight={"400"}
-                  m={"15px 0 25px"}
-                >
-                  forever free
-                </Text>
+                <Box justifyContent={"center"} margin={"auto"}>
+                  <Text
+                    fontSize="14px"
+                    textTransform={"none"}
+                    color={"gray.500"}
+                    fontWeight={"400"}
+                    m={"15px 0 25px"}
+                  >
+                    forever free
+                  </Text>
                 </Box>
                 <BtnComponent
                   label={isAuth ? "Current Plan" : "Get Started"}
@@ -58,16 +61,16 @@ const PlanTable = () => {
                 >
                   Starter
                 </Text>
-                <Box justifyContent={"center"} margin={"auto"} >
-                <Text
-                  fontSize="14px"
-                  textTransform={"none"}
-                  color={"gray.500"}
-                  fontWeight={"400"}
-                  m={"15px 0 25px"}
-                >
-                  $79USD/month
-                </Text>
+                <Box justifyContent={"center"} margin={"auto"}>
+                  <Text
+                    fontSize="14px"
+                    textTransform={"none"}
+                    color={"gray.500"}
+                    fontWeight={"400"}
+                    m={"15px 0 25px"}
+                  >
+                    $79USD/month
+                  </Text>
                 </Box>
                 <BtnComponent label={isAuth ? "Upgrade" : "Get Started"} />
               </Box>
@@ -82,16 +85,16 @@ const PlanTable = () => {
                 >
                   Professional
                 </Text>
-                <Box justifyContent={"center"} margin={"auto"} >
-                <Text
-                  fontSize="14px"
-                  textTransform={"none"}
-                  color={"gray.500"}
-                  fontWeight={"400"}
-                  m={"15px 0 25px"}
-                >
-                  $199 USD/month
-                </Text>
+                <Box justifyContent={"center"} margin={"auto"}>
+                  <Text
+                    fontSize="14px"
+                    textTransform={"none"}
+                    color={"gray.500"}
+                    fontWeight={"400"}
+                    m={"15px 0 25px"}
+                  >
+                    $199 USD/month
+                  </Text>
                 </Box>
                 <BtnComponent
                   label={isAuth ? "Upgrade" : "Get Started"}
@@ -109,16 +112,16 @@ const PlanTable = () => {
                 >
                   Enterprise
                 </Text>
-                <Box justifyContent={"center"} margin={"auto"} >
-                <Text
-                  fontSize="14px"
-                  textTransform={"none"}
-                  color={"gray.500"}
-                  fontWeight={"400"}
-                  m={"15px 0 25px"}
-                >
-                  Let's talk!
-                </Text>
+                <Box justifyContent={"center"} margin={"auto"}>
+                  <Text
+                    fontSize="14px"
+                    textTransform={"none"}
+                    color={"gray.500"}
+                    fontWeight={"400"}
+                    m={"15px 0 25px"}
+                  >
+                    Let's talk!
+                  </Text>
                 </Box>
                 <BtnComponent label={"Learn More"} />
               </Box>
